@@ -7,8 +7,9 @@ import {
 
 const customInputStyle = {
   disabled: {
+    backgroundColor: '#F7F7F7',
     "&:before": {
-      borderColor: "transparent !important"
+      borderColor: "transparent !important",
     }
   },
   underline: {
@@ -22,7 +23,10 @@ const customInputStyle = {
   },
   underlineError: {
     "&:after": {
-      borderColor: dangerColor
+      borderColor: dangerColor,
+    },
+    "& svg": {
+      color: '#cb1e25',
     }
   },
   underlineSuccess: {
@@ -44,7 +48,6 @@ const customInputStyle = {
     fontWeight: "400",
     fontSize: "14px",
     lineHeight: "1.42857",
-    // top: "10px",
     letterSpacing: "unset",
     "& + $underline": {
       marginTop: "0px"
@@ -58,14 +61,13 @@ const customInputStyle = {
   },
   formControl: {
     margin: "0 0 17px 0",
-    // paddingTop: "27px",
     position: "relative",
     "& svg,& .fab,& .far,& .fal,& .fas,& .material-icons": {
       color: "#495057"
     }
   },
   input: {
-    color: "#495057",
+    color: "#323232",
     height: "unset",
     "&,&::placeholder": {
       fontSize: "14px",

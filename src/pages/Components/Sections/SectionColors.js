@@ -5,7 +5,7 @@ import GridContainer from "../../../components/Grid/GridContainer";
 import GridItem from "../../../components/Grid/GridItem";
 
 import { primaryColor } from "../../../assets/jss/ui-kit";
-import { Section, Container, Title, Subtitle, Text } from './Styles';
+import { Section, Container, Title, Text } from './Styles';
 import { Box, Tag } from './SectionColorsStyles';
 
 export default function SectionColors() {

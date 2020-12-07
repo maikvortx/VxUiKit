@@ -4,50 +4,58 @@ import PropTypes from "prop-types";
 
 // @material-ui/core components
 import { makeStyles } from "@material-ui/core/styles";
-import Icon from "@material-ui/core/Icon";
-import {FormControl, Select, MenuItem, ListItemText, InputLabel, TextField, Checkbox, Chip} from '@material-ui/core';
+import {FormControl, Select, InputLabel, MenuItem, FormHelperText, Checkbox, ListItemText } from '@material-ui/core';
 
 // core components
 import styles from "./customDropdownStyle";
 
 const useStyles = makeStyles(styles);
 
+const optionsData = [
+  {
+    value: 'opcao1',
+    label: 'Opção 1',
+  },
+  {
+    value: 'opcao2',
+    label: 'Opção 2',
+  },
+  {
+    value: 'opcao3',
+    label: 'Opção 3',
+  },
+  {
+    value: 'opcao4',
+    label: 'Opção 4',
+  },
+];
 export default function CustomDropdown(props) {
+  const classes = useStyles();
   const {
     formControlProps,
     labelText,
     id,
-    labelProps,
     inputProps,
+    disabled,
+    success,
     error,
     white,
-    inputRootCustomClasses,
-    success,
+    helperText,
+    checkbox,
     variant
   } = props;
 
-  const [anchorEl, setAnchorEl] = useState(null);
-  const handleClick = event => {
-    if (anchorEl && anchorEl.contains(event.target)) {
-      setAnchorEl(null);
-    } else {
-      setAnchorEl(event.currentTarget);
-    }
-  };
-  const handleClose = param => {
-    setAnchorEl(null);
-    if (props && props.onClick) {
-      props.onClick(param);
-    }
-  };
-  const handleCloseAway = event => {
-    if (anchorEl.contains(event.target)) {
-      return;
-    }
-    setAnchorEl(null);
-  };
-  const classes = useStyles();
-  let icon = null;
+  const labelClasses = classNames({
+    [" " + classes.labelRootError]: error,
+    [" " + classes.labelRootSuccess]: success && !error
+  });
+  const underlineClasses = classNames({
+    [classes.underlineError]: error,
+    [classes.underlineSuccess]: success && !error,
+    [classes.underline]: true,
+    [classes.whiteUnderline]: white
+  });
+
   var formControlClasses;
   if (formControlProps !== undefined) {
     formControlClasses = classNames(
@@ -57,52 +65,54 @@ export default function CustomDropdown(props) {
   } else {
     formControlClasses = classes.formControl;
   }
-  switch (typeof buttonIcon) {
-    case "object":
-      icon = <props.buttonIcon className={classes.buttonIcon} />;
-      break;
-    case "string":
-      icon = <Icon className={classes.buttonIcon}>{props.buttonIcon}</Icon>;
-      break;
-    default:
-      icon = null;
-      break;
-  }
+
+  const [optionSelected, setOptionSelected] = useState([]);
+
+  const handleSelect = (event) => {
+    setOptionSelected(event.target.value);
+  };
+
   return (
-    <FormControl {...formControlProps} className={formControlClasses}>
-        <InputLabel id={id} htmlFor={id}>{labelText}</InputLabel>
-        <Select
-          labelId="BuscaStatus"
-          multiple
-          // value={statusBoleta}
-          // onChange={handleSelect}
-          label={labelText}
-          autoWidth
-          {...inputProps}
-          MenuProps={{
-            PaperProps: {
-              style: {
-                maxHeight: 300,
-                width: 300,
-              }
+    <FormControl variant="outlined" margin="dense" style={{width: '100%'}}>
+      <InputLabel
+        id={id}
+        htmlFor={id} 
+        className={classes.labelRoot + " " + labelClasses}
+      >{labelText}</InputLabel>
+      <Select
+        classes={{
+          disabled: classes.disabled,
+          underline: underlineClasses,
+        }}
+        labelId="BuscaStatus"
+        multiple
+        value={optionSelected}
+        onChange={handleSelect}
+        disabled={disabled}
+        label={labelText}
+        error={error}
+        variant={variant}
+        {...inputProps}
+        MenuProps={{
+          PaperProps: {
+            style: {
+              maxHeight: 300,
             }
-          }}
-          renderValue={(selected) => selected.map(value => (
-            value.status)).join(', ')
           }
-        >
-          {/* {status.length ? status.map(eachOption => {
-            const valueOptions = statusBoleta.map(eachValue => eachValue.status);
-            const isChecked = valueOptions.includes(eachOption.status); */}
-            {/* return ( */}
-              {/* <MenuItem key={eachOption.status} value={eachOption}>
-                <Checkbox checked={isChecked} />
-                <ListItemText primary={eachOption.status} />
-              </MenuItem> */}
-            {/* ); */}
-          {/* }): undefined} */}
-        </Select>
-      </FormControl>
+        }}
+        renderValue={(selected) => selected.map(value => (
+          value.label)).join(', ')
+        }
+      >
+        {optionsData.map((option) => (
+          <MenuItem key={option.value} value={option}>
+            {checkbox ? <Checkbox color="primary" checked={optionSelected.indexOf(option) > -1} /> : null}
+            <ListItemText primary={option.label}/>
+          </MenuItem>
+        ))}
+      </Select>
+      <FormHelperText>{helperText}</FormHelperText>
+    </FormControl>
   );
 }
 

@@ -18,7 +18,7 @@ export default function SectionTooltip() {
     <Section>
       <Container>
         <GridContainer>
-          <GridItem xs={12} sm={12} md={7}>
+          <GridItem xs={12} sm={12} md={6}>
             <Title>
               <h3>Tooltip</h3>
             </Title>

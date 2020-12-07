@@ -19,35 +19,44 @@ export const ModalContent = styled.div`
   height: auto;
   width: ${props => props.width || '50%'};
   padding: 20px;
-  margin: 2% auto;
+  margin: 200px auto;
   @media only screen and (max-width: 500px) {
     width: 80%;
   }
 `;
 export const ModalCloseBtn = styled.p`
-  color: #cb1e25;
+  color: #343434;
   float: right;
   font-size: 49px;
   font-weight: 300;
   &:hover {
+    color: #cb1e25;
     cursor: pointer;
-    color: #343434;
   }
 `;
-export const ModalContentInfo = styled.div`
+export const ModalHeader = styled.div`
   margin: 30px;
-  & h4 {
-    border-bottom: 1px solid #c4c4c4;
+  border-bottom: 1px solid #c4c4c4;
+  padding-bottom: 20px;
+  & h3 {
     padding-bottom: 20px;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
+    position: relative;
+    :before {
+      content : "";
+      position: absolute;
+      left    : 0;
+      bottom  : 0;
+      height  : 1px;
+      width   : 10%; 
+      border-bottom: 3px solid #CB1E25;
+    }
   }
-  & h5 {
-    font-size: 16px;
-    margin-bottom: 20px;
-  }
+`;
+export const ModalBody = styled.div`
+  margin: 30px;
 `;
 export const ModalButton = styled.div`
-  border-top: 1px solid #c4c4c4;
   padding: 30px 0;
   margin: 0 30px;
   display: flex;

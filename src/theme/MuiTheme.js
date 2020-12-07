@@ -53,11 +53,23 @@ const theme = createMuiTheme(
           },
         },
       },
+      MuiListItem: {
+        button: {
+          '&:hover': {
+            backgroundColor: "#F3D5D5",
+          },
+        },
+      },
       MuiMobileStepper: {
         root: {
           background: 'unset',
         },
       },
+      MuiTabs: {
+        root: {
+          backgroundColor: "#F5F5F5",
+        }
+      }
     },
   },
   ptBR

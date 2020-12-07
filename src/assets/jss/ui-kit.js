@@ -39,8 +39,8 @@ const card = {
   position: "relative",
   width: "100%",
   margin: "25px 0",
-  boxShadow: "0 2px 4px 0 rgba(0, 0, 0, 0.25)",
-  borderRadius: "3px",
+  boxShadow: "0 1px 2px 0 rgba(0, 0, 0, 0.25)",
+  borderRadius: "4px",
   color: "rgba(0, 0, 0, 0.87)",
   background: "#fff"
 };
@@ -78,7 +78,7 @@ const greenDarkColor = "#225E03";
 
 const primaryBoxShadow = {
   boxShadow:
-    "0 12px 20px -10px rgba(156, 39, 176, 0.28), 0 4px 20px 0px rgba(0, 0, 0, 0.12), 0 7px 8px -5px rgba(156, 39, 176, 0.2)"
+    "0px 2px 4px rgba(0, 0, 0, 0.25);"
 };
 const infoBoxShadow = {
   boxShadow:
@@ -123,7 +123,7 @@ const infoCardHeader = {
 };
 const primaryCardHeader = {
   color: "#fff",
-  background: "linear-gradient(60deg, #ab47bc, #8e24aa)",
+  backgroundColor: "#CB1E25",
   ...primaryBoxShadow
 };
 const roseCardHeader = {

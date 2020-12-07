@@ -4,6 +4,7 @@ import PropTypes from "prop-types";
 
 // material-ui components
 import { makeStyles } from "@material-ui/core/styles";
+import Paper from "@material-ui/core/Paper";
 import Tabs from "@material-ui/core/Tabs";
 import Tab from "@material-ui/core/Tab";
 import Icon from "@material-ui/core/Icon";
@@ -34,7 +35,10 @@ export default function CustomTabs(props) {
         {title !== undefined ? <div className={cardTitle}>{title}</div> : null}
         <Tabs
           value={value}
+          variant="fullWidth"
           onChange={handleChange}
+          textColor="primary"
+          indicatorColor="primary"
           classes={{
             root: classes.tabsRoot,
             indicator: classes.displayNone
@@ -68,15 +72,15 @@ export default function CustomTabs(props) {
           })}
         </Tabs>
       </CardHeader>
-      <CardBody>
-        {tabs.map((prop, key) => {
-          if (key === value) {
-            return <div key={key}>{prop.tabContent}</div>;
-          }
-          return null;
-        })}
-      </CardBody>
-    </Card>
+       <CardBody>
+         {tabs.map((prop, key) => {
+           if (key === value) {
+             return <div key={key}>{prop.tabContent}</div>;
+           }
+           return null;
+         })}
+       </CardBody>
+     </Card>
   );
 }
 

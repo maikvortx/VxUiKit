@@ -6,13 +6,76 @@ import { makeStyles } from "@material-ui/core/styles";
 import GridContainer from "../../../components/Grid/GridContainer";
 import GridItem from "../../../components/Grid/GridItem";
 import Button from "../../../components/CustomButtons/Button";
+import DatePicker from "../../../components/CustomDatePicker/CustomDatePicker";
+
 // icons components
-import { AccessAlarm, Add, AddCircle, AddBox, AddToPhotos, Error, Help, Warning, Info, NotificationImportant, FileCopy, Description, InsertDriveFile, Attachment, Backup, CloudDone, CloudOff, Folder, CreateNewFolder, ArrowBack,ArrowDownward, ArrowForward,ArrowUpward, Menu, Apps   } from '@material-ui/icons';
+import {
+  AccessAlarmRounded,
+  GetAppRounded,
+  AddRounded,
+  AddCircleRounded,
+  AddAlertRounded,
+  DoneRounded,
+  ChevronLeftRounded,
+  ChevronRightRounded,
+  ExpandLessRounded,
+  ExpandMoreRounded,
+  ArrowLeftRounded,
+  ArrowRightRounded,
+  ArrowDropDownRounded,
+  ArrowDropUpRounded,
+  ArrowDropDownCircleRounded,
+  FirstPageRounded,
+  LastPageRounded,
+  UnfoldLessRounded,
+  UnfoldMoreRounded,
+  SubdirectoryArrowLeftRounded,
+  SubdirectoryArrowRightRounded,
+  CloseRounded,
+  FullscreenRounded,
+  FullscreenExitRounded,
+  MoreHorizRounded,
+  MoreVertRounded,
+  CloudRounded,
+  CloudQueueRounded,
+  FolderSharedRounded,
+  FolderOpenRounded,
+  CheckRounded,
+  DoneAllRounded,
+  DoneOutlineRounded,
+  CheckCircleRounded,
+  OfflinePinRounded,
+  ShoppingCartRounded,
+  LibraryAddCheckRounded,
+  PlaylistAddRounded,
+  PlaylistAddCheckRounded,
+  AddBoxRounded,
+  AddToPhotosRounded,
+  ErrorRounded,
+  ErrorOutlineRounded,
+  WarningRounded,
+  NotificationImportantRounded,
+  FileCopyRounded,
+  DescriptionRounded,
+  InsertDriveFileRounded,
+  AttachmentRounded,
+  BackupRounded,
+  CloudDoneRounded,
+  CloudOffRounded,
+  FolderRounded,
+  CreateNewFolderRounded,
+  ArrowBackRounded,
+  ArrowDownwardRounded,
+  ArrowForwardRounded,
+  ArrowUpwardRounded,
+  MenuRounded,
+  AppsRounded,
+  CloudDownloadRounded,
+  CloudCircleRounded  
+} from '@material-ui/icons';
 
-import styles from "../../../components/Typography/typographyStyle";
 import { Section, Container, Title, Text } from './Styles';
-
-const useStyles = makeStyles(styles);
+import { Card } from "@material-ui/core";
 
 export default function SectionTypography() {
   return (
@@ -35,51 +98,123 @@ export default function SectionTypography() {
                 <GridContainer>
                   <GridItem xs={12} sm={6}>
                     <Title>
-                      <h3>Ações</h3>
+                      <h3><small>Ações</small></h3>
                     </Title>
-                    <AccessAlarm/>
-                    <Add/>
-                    <AddCircle/>
-                    <AddBox/>
-                    <AddToPhotos/>
+                    <AccessAlarmRounded/>
+                    <GetAppRounded/>
+                    <AddRounded/>
+                    <AddCircleRounded/>
+                    <AddBoxRounded/>
+                    <DoneRounded/> 
+                    <CheckRounded/> 
+                    <DoneAllRounded/>
+                    <DoneOutlineRounded/>
+                    <CheckCircleRounded/>
+                    <OfflinePinRounded/>
+                    <ShoppingCartRounded/>
+                    <LibraryAddCheckRounded/>
+                    <PlaylistAddRounded/>
+                    <PlaylistAddCheckRounded/>
+                    <AddToPhotosRounded/>
                   </GridItem>
                   <GridItem xs={12} sm={6}>
                     <Title>
-                      <h3>Navegação</h3>
+                      <h3><small>Navegação</small></h3>
                     </Title>
-                    <ArrowBack/>
-                    <ArrowDownward/>
-                    <ArrowForward/>
-                    <ArrowUpward/>
-                    <Menu/>
-                    <Apps/>
+                    <ArrowBackRounded/>
+                    <ArrowDownwardRounded/>
+                    <ArrowForwardRounded/>
+                    <ArrowUpwardRounded/>
+                    <ChevronLeftRounded/>
+                    <ChevronRightRounded/>
+                    <ExpandLessRounded/>
+                    <ExpandMoreRounded/>
+                    <ArrowLeftRounded/>
+                    <ArrowRightRounded/>
+                    <ArrowDropUpRounded/>
+                    <ArrowDropDownRounded/>
+                    <ArrowDropDownCircleRounded/>
+                    <FirstPageRounded/>
+                    <LastPageRounded/>
+                    <UnfoldLessRounded/>
+                    <UnfoldMoreRounded/>
+                    <SubdirectoryArrowLeftRounded/>
+                    <SubdirectoryArrowRightRounded/>
+                    <CloseRounded/>
+                    <FullscreenExitRounded/>
+                    <FullscreenRounded/>
+                    <MoreHorizRounded/>
+                    <MoreVertRounded/>
+                    <MenuRounded/>
+                    <AppsRounded/>
                   </GridItem>
                   <GridItem xs={12} sm={6}>
                     <Title>
-                      <h3>Arquivos</h3>
+                      <h3><small>Arquivos</small></h3>
                     </Title>
-                    <FileCopy/>
-                    <Description/>
-                    <InsertDriveFile/>
-                    <Attachment/>
-                    <Backup/>
-                    <CloudDone/>
-                    <CloudOff/>
-                    <Folder/>
-                    <CreateNewFolder/>
+                    <CloudRounded/>
+                    <CloudQueueRounded/>
+                    <CloudDownloadRounded/>
+                    <CloudDoneRounded/>
+                    <CloudOffRounded/>
+                    <CloudCircleRounded/>
+                    <FileCopyRounded/>
+                    <DescriptionRounded/>
+                    <InsertDriveFileRounded/>
+                    <AttachmentRounded/>
+                    <BackupRounded/>
+                    <FolderRounded/>
+                    <FolderSharedRounded/>
+                    <FolderOpenRounded/>
+                    <CreateNewFolderRounded/>
                   </GridItem>
                   <GridItem xs={12} sm={6}>
                     <Title>
-                      <h3>Alertas</h3>
+                      <h3><small>Alertas</small></h3>
                     </Title>
-                    <Error/>
-                    <Help/>
-                    <Warning/>
-                    <Info/>
-                    <NotificationImportant/>
+                    <WarningRounded/>
+                    <ErrorRounded/>
+                    <ErrorOutlineRounded/>
+                    <AddAlertRounded/>
+                    <NotificationImportantRounded/>
                   </GridItem>
                 </GridContainer>
               </GridItem>
+          </GridContainer>
+          <GridContainer>
+            <GridItem xs={12} sm={4}>
+              <Title>
+                <h3><small>Exemplos de utilização</small></h3>
+              </Title>
+              <Text>
+                Usar em botões e campos para ilustrar a ação que o mesmo faz. Exemplo:
+              </Text>
+            </GridItem>
+            <GridItem xs={12} sm={4}>
+              <Text>
+                Usar em botões e campos para ilustrar a ação que o mesmo faz. Exemplo:
+              </Text>
+              <DatePicker
+                id="regular"
+                labelText="Regular"
+                variant="outlined"
+                inputProps={{
+                  placeholder: "Regular"
+                }}
+                formControlProps={{
+                  fullWidth: true
+                }}
+              />
+              <Button color="primary">
+                <GetAppRounded/> Com ícone
+              </Button>
+            </GridItem>
+            <GridItem xs={12} sm={4}>
+              <Text>
+              Exemplo em cards (VxInforma). Exemplo:
+              </Text>
+              <Card/>
+            </GridItem>
           </GridContainer>
         </div>
       </Container>

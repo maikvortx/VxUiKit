@@ -4,6 +4,7 @@ import classNames from "classnames";
 //--- @material-ui/core components ---//
 import { makeStyles } from "@material-ui/core/styles";
 import FormControl from "@material-ui/core/FormControl";
+import FormHelperText from "@material-ui/core/FormHelperText";
 import InputLabel from "@material-ui/core/InputLabel";
 import OutlinedInput from "@material-ui/core/OutlinedInput";
 
@@ -17,9 +18,13 @@ export default function CustomInput(props) {
     formControlProps,
     labelText,
     id,
+    value,
+    placeholder,
     labelProps,
     inputProps,
+    disabled,
     error,
+    helperText,
     white,
     inputRootCustomClasses,
     success,
@@ -53,7 +58,7 @@ export default function CustomInput(props) {
     formControlClasses = classes.formControl;
   }
   return (
-    <FormControl {...formControlProps} className={formControlClasses}>
+    <FormControl variant="outlined" style={{width: '100%'}}>
       {labelText !== undefined ? (
         <InputLabel
           className={classes.labelRoot + " " + labelClasses}
@@ -70,10 +75,16 @@ export default function CustomInput(props) {
           disabled: classes.disabled,
           underline: underlineClasses,
         }}
+        value={value}
+        placeholder={placeholder}
+        error={error}
+        disabled={disabled}
+        helperText={helperText}
         id={id}
-        labelWidth={70}
+        labelWidth={labelText ? 80 : null}
         {...inputProps}
       />
+      <FormHelperText id="component-error-text" style={{color: '#cb1e25'}}>{helperText}</FormHelperText>
     </FormControl>
   );
 }

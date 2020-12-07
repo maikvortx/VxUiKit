@@ -1,5 +1,5 @@
 import React, { useCallback, useState } from 'react'
-import { ModalContainer, ModalContent,ModalCloseBtn, ModalContentInfo, ModalButton } from './styles';
+import { ModalContainer, ModalContent, ModalCloseBtn, ModalHeader, ModalBody, ModalButton } from './styles';
 import {Button} from '@material-ui/core';
 
 const ModalContext = React.createContext()
@@ -11,11 +11,13 @@ const Modal = ({ modal, unSetModal }) => {
         <ModalCloseBtn onClick={unSetModal}>
           &times;
         </ModalCloseBtn>
-        <ModalContentInfo>
-          <h4>{modal.title}</h4>
-          <h5>{modal.subtitle}</h5>
+        <ModalHeader>
+          <h3>{modal.title}</h3>
+          <p>{modal.subtitle}</p>
+        </ModalHeader>
+        <ModalBody>
           {modal.body}
-        </ModalContentInfo>
+        </ModalBody>
         { modal.button ?
           <ModalButton>
             <Button variant="contained" color="primary" type="button" onClick={unSetModal}>

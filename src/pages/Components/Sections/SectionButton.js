@@ -8,7 +8,7 @@ import GridContainer from "../../../components/Grid/GridContainer";
 import GridItem from "../../../components/Grid/GridItem";
 import Button from "../../../components/CustomButtons/Button";
 
-import { Section, Container, Subtitle, Title } from './Styles';
+import { Section, Container, Title } from './Styles';
 
 export default function SectionButton() {
  

@@ -1,3 +1,5 @@
+import { BorderBottom } from "@material-ui/icons";
+
 const customTabsStyle = {
   cardTitle: {
     float: "left",
@@ -12,21 +14,12 @@ const customTabsStyle = {
     display: "none !important"
   },
   tabsRoot: {
-    minHeight: "unset !important"
+    minHeight: "unset !important",
+    border: "1px solid #c4c4c4",
   },
   tabRootButton: {
-    minHeight: "unset !important",
-    minWidth: "unset !important",
-    width: "unset !important",
-    height: "unset !important",
-    maxWidth: "unset !important",
-    maxHeight: "unset !important",
     padding: "10px 15px",
-    borderRadius: "3px",
     lineHeight: "24px",
-    border: "0 !important",
-    color: "#fff !important",
-    marginLeft: "4px",
     fontWeight: "500",
     fontSize: "12px",
     "&:last-child": {
@@ -34,8 +27,10 @@ const customTabsStyle = {
     }
   },
   tabSelected: {
-    backgroundColor: "rgba(255, 255, 255, 0.2)",
-    transition: "0.2s background-color 0.1s"
+    backgroundColor: "rgba(193, 44, 44, 0.2)",
+    fontWeight: "700",
+    transition: "0.2s background-color 0.1s",
+    borderBottom: "3px solid #CB1E25",
   },
   tabWrapper: {
     display: "inline-block",

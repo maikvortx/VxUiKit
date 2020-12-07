@@ -26,6 +26,7 @@ import SectionTypography from "./Sections/SectionTypography";
 import SectionIcons from "./Sections/SectionIcons";
 import SectionModal from "./Sections/SectionModal";
 import SectionTooltip from "./Sections/SectionTooltip";
+import SectionTable from "./Sections/SectionTable";
 import SectionIlustrations from "./Sections/SectionIlustrations";
 import SectionExamples from "./Sections/SectionExamples";
 
@@ -73,11 +74,12 @@ export default function Components(props) {
         <SectionBasics />
         <SectionPagination />
         {/* <SectionNavbars /> */}
-        {/* <SectionTabs /> */}
+        <SectionTabs />
         <SectionNotifications />
         <SectionTypography />
         <SectionModal />
         <SectionTooltip />
+        <SectionTable />
         <SectionIlustrations />
         <SectionExamples />
       </div>

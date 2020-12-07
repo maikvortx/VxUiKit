@@ -10,23 +10,24 @@ Projeto para desenvolvimento do UI Kit da Vórtx, desenvolvido em React.
 ### To Do
 
 - [X] Cores
-- [ ] Tipografia
+- [X] Ícones
+- [X] Tipografia
 - [X] Botões
-- [ ] Input
-    - [ ] Input Formulário
-    - [ ] Input Filtro
-    - [ ] Input Droplist
-    - [ ] Input Busca/Pesquisar
-    - [ ] Input Data e Range de Data
+- [X] Input
+    - [X] Input Formulário
+    - [X] Input Filtro - Droplist
+    - [X] Input Filtro - Droplist com Checkbox
+    - [X] Input Busca/Pesquisar
+    - [X] Input Data e Range de Data
 - [ ] Cards
-- [ ] Modal
+- [X] Modal
 - [X] Checkboxes
 - [X] Radio Button
 - [X] Switch
 - [X] Badges
-- [ ] Tooltips
+- [X] Tooltips
 - [ ] Header
-- [ ] Abas
+- [X] Abas
 - [ ] Tabela
 - [X] Paginação
 - [X] Alertas / Toast notification

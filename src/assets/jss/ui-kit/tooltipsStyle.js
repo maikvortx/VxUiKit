@@ -4,7 +4,7 @@ export const tooltipsStyle = {
     minWidth: "130px",
     color: "#525252",
     lineHeight: "1.7em",
-    background: "#DEDEDE",
+    background: "#DEDEDE",  
     border: "none",
     borderRadius: "4px",
     boxShadow: "(0px 2px 2px rgba(0, 0, 0, 0.161))",

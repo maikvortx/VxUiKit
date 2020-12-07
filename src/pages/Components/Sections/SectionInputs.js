@@ -1,19 +1,19 @@
-import React, {useState, useEffect} from "react";
+import React from "react";
 // @material-ui/core components
 import { makeStyles } from "@material-ui/core/styles";
 import InputAdornment from "@material-ui/core/InputAdornment";
 // @material-ui/icons
-import Error from "@material-ui/icons/Error";
-import People from "@material-ui/icons/People";
+import {Error, Search} from "@material-ui/icons";
+
 // core components
 import GridContainer from "../../../components/Grid/GridContainer";
 import GridItem from "../../../components/Grid/GridItem";
-import CustomInput from "../../../components/CustomInput/CustomInput";
+import Input from "../../../components/CustomInput/CustomInput";
 
 import styles from "../../../assets/jss/ui-kit/views/componentsSections/basicsStyle";
-import { Section, Container, Title, Subtitle } from './Styles';
-import CustomDropdown from "../../../components/CustomDropdown/CustomDropdown";
-import CustomDatePicker from "../../../components/CustomDatePicker/CustomDatePicker";
+import { Section, Container, Title } from './Styles';
+import Dropdown from "../../../components/CustomDropdown/CustomDropdown";
+import DatePicker from "../../../components/CustomDatePicker/CustomDatePicker";
 
 const useStyles = makeStyles(styles);
 
@@ -31,7 +31,8 @@ export default function SectionInputs() {
           </Title>
           <GridContainer>
             <GridItem xs={12} sm={4} md={4} lg={3}>
-              <CustomInput
+              <h5>Label</h5>
+              <Input
                 id="regular"
                 labelText="Regular"
                 inputProps={{
@@ -43,20 +44,12 @@ export default function SectionInputs() {
               />
             </GridItem>
             <GridItem xs={12} sm={4} md={4} lg={3}>
-              <CustomInput
-                labelText="Sucesso"
-                id="success"
-                success
-                formControlProps={{
-                  fullWidth: true
-                }}
-              />
-            </GridItem>
-            <GridItem xs={12} sm={4} md={4} lg={3}>
-              <CustomInput
-                labelText="Erro"
+              <h5>Label</h5>
+              <Input
+                value="Erro"
                 id="error"
                 error
+                helperText="*Mensagem de erro."
                 formControlProps={{
                   fullWidth: true
                 }}
@@ -70,16 +63,28 @@ export default function SectionInputs() {
               />
             </GridItem>
             <GridItem xs={12} sm={4} md={4} lg={3}>
-              <CustomInput
-                labelText="With material Icons"
-                id="material"
+              <h5>Label</h5>
+              <Input
+                labelText="Desabilitado"
+                id="desabilitado"
+                disabled
+                formControlProps={{
+                  fullWidth: true
+                }}
+              />
+            </GridItem>
+            <GridItem xs={12} sm={4} md={4} lg={3}>
+              <h5>Label</h5>
+              <Input
+                placeholder="Pesquisar"
+                id="input-pesquisar"
                 formControlProps={{
                   fullWidth: true
                 }}
                 inputProps={{
-                  endAdornment: (
+                  startAdornment: (
                     <InputAdornment position="end">
-                      <People />
+                      <Search />
                     </InputAdornment>
                   )
                 }}
@@ -91,7 +96,7 @@ export default function SectionInputs() {
           </Title>
           <GridContainer>
             <GridItem xs={12} sm={4} md={4} lg={3}>
-              <CustomDatePicker
+              <DatePicker
                 id="regular"
                 labelText="Regular"
                 variant="outlined"
@@ -104,10 +109,24 @@ export default function SectionInputs() {
               />
             </GridItem>
             <GridItem xs={12} sm={4} md={4} lg={3}>
-              <CustomDropdown
+              <Dropdown
+                id="Filtro"
+                labelText="Filtro"
+                variant="outlined"
+                inputProps={{
+                  placeholder: "Filtro"
+                }}
+                formControlProps={{
+                  fullWidth: true
+                }}
+              />
+            </GridItem>
+            <GridItem xs={12} sm={4} md={4} lg={3}>
+              <Dropdown
                 id="regular"
                 labelText="Regular"
                 variant="outlined"
+                checkbox
                 inputProps={{
                   placeholder: "Regular"
                 }}
@@ -117,26 +136,15 @@ export default function SectionInputs() {
               />
             </GridItem>
             <GridItem xs={12} sm={4} md={4} lg={3}>
-              <CustomDropdown
+              <Dropdown
                 id="regular"
                 labelText="Regular"
                 variant="outlined"
+                disabled
                 inputProps={{
                   placeholder: "Regular"
                 }}
-                formControlProps={{
-                  fullWidth: true
-                }}
-              />
-            </GridItem>
-            <GridItem xs={12} sm={4} md={4} lg={3}>
-              <CustomDropdown
-                id="regular"
-                labelText="Regular"
-                variant="outlined"
-                inputProps={{
-                  placeholder: "Regular"
-                }}
+                fullWidth
                 formControlProps={{
                   fullWidth: true
                 }}

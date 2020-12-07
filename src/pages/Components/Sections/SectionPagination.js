@@ -20,7 +20,6 @@ export default function SectionPagination() {
               <GridItem xs={12} sm={12} md={6}>
               <Paginations
                 pages={[
-                  { text: "<" },
                   { active: true, text: 1 },
                   { text: 2 },
                   { text: 3 },
@@ -34,12 +33,11 @@ export default function SectionPagination() {
                   <Paginations
                     pages={[
                       { text: "<" },
-                      { active: true, text: 1 },
+                      { text: 1 },
                       { text: 2 },
-                      { text: 3 },
                       { text: "..." },
-                      { text: 19 },
-                      { text: ">" }
+                      { text: 18 },
+                      { active: true, text: 19 },
                     ]}
                     color="info"
                   />
@@ -48,10 +46,10 @@ export default function SectionPagination() {
                   <Paginations
                     pages={[
                       { text: "<" },
-                      { active: true, text: 1 },
-                      { text: 2 },
-                      { text: 3 },
+                      { active: true, text: 7 },
+                      { text: 8 },
                       { text: "..." },
+                      { text: 18 },
                       { text: 19 },
                       { text: ">" }
                     ]}

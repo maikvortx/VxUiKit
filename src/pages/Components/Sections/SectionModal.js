@@ -16,6 +16,7 @@ export default function SectionModal() {
   const handleModal = () => {
     setModal({
       title: 'Título',
+      subtitle: 'Sub-título',
       body: 'Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind',
       button: 'Botão',
     });
