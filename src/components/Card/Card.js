@@ -13,7 +13,7 @@ import styles from "./cardStyle";
 const useStyles = makeStyles(styles);
 
 export default function Card(props) {
-  const classes = useStyles();
+  const classes = useStyles({...props});
   const { className, children, plain, carousel, ...rest } = props;
   const cardClasses = classNames({
     [classes.card]: true,

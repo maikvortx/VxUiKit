@@ -2,10 +2,10 @@ import styled from 'styled-components';
 
 export const Section = styled.div`
   padding: 70px 0;
+  background-color: ${props => props.bgColor || "#FFFFFF"};
 `;
 export const Container = styled.div`
-  background-color: white;
-  border-radius: 6px;
+  border-radius: 4px;
   width: 90%;
   margin: 0 auto;
   margin-top: 30px;

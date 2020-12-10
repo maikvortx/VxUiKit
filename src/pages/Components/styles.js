@@ -6,8 +6,7 @@ const gerarGridWidth = size => {
 };
 
 export const Container = styled.div`
-  background-color: white;
-  border-radius: 6px;
+  border-radius: 4px;
   width: 90%;
   margin: 0 auto;
   margin-top: 30px;
@@ -95,7 +94,7 @@ export const PainelContentRow = styled.div`
   justify-content: space-between;
   & .Painel-Content-Row {
     width: 46%;
-    border-radius: 6px;
+    border-radius: 4px;
     border: 1px solid #8888;
     padding: 10px;
     overflow-x: auto;

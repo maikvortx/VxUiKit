@@ -27,6 +27,7 @@ import SectionIcons from "./Sections/SectionIcons";
 import SectionModal from "./Sections/SectionModal";
 import SectionTooltip from "./Sections/SectionTooltip";
 import SectionTable from "./Sections/SectionTable";
+import SectionCard from "./Sections/SectionCard";
 import SectionIlustrations from "./Sections/SectionIlustrations";
 import SectionExamples from "./Sections/SectionExamples";
 
@@ -80,6 +81,7 @@ export default function Components(props) {
         <SectionModal />
         <SectionTooltip />
         <SectionTable />
+        <SectionCard />
         <SectionIlustrations />
         <SectionExamples />
       </div>
