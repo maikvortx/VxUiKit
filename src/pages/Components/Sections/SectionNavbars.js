@@ -18,7 +18,6 @@ import CustomInput from "../../../components/CustomInput/CustomInput";
 import CustomDropdown from "../../../components/CustomDropdown/CustomDropdown";
 import Button from "../../../components/CustomButtons/Button";
 
-import image from "../../../assets/img/bg4.jpg";
 import profileImage from "../../../assets/img/faces/avatar.jpg";
 
 import styles from "../../../assets/jss/ui-kit/views/componentsSections/navbarsStyle";
@@ -135,7 +134,6 @@ export default function SectionNavbars() {
       <div id="navbar" className={classes.navbar}>
         <div
           className={classes.navigation}
-          style={{ backgroundImage: "url(" + image + ")" }}
         >
           <Header
             brand="Brand"
@@ -365,68 +363,7 @@ export default function SectionNavbars() {
               </List>
             }
           />
-          <Header
-            brand="Transparent"
-            color="transparent"
-            rightLinks={
-              <List className={classes.list}>
-                <ListItem className={classes.listItem}>
-                  <Button
-                    color="transparent"
-                    className={
-                      classes.navLink + " " + classes.socialIconsButton
-                    }
-                  >
-                    <i
-                      className={
-                        classes.socialIcons +
-                        " " +
-                        classes.marginRight5 +
-                        " fab fa-twitter"
-                      }
-                    />{" "}
-                    Twitter
-                  </Button>
-                </ListItem>
-                <ListItem className={classes.listItem}>
-                  <Button
-                    color="transparent"
-                    className={
-                      classes.navLink + " " + classes.socialIconsButton
-                    }
-                  >
-                    <i
-                      className={
-                        classes.socialIcons +
-                        " " +
-                        classes.marginRight5 +
-                        " fab fa-facebook"
-                      }
-                    />{" "}
-                    Facebook
-                  </Button>
-                </ListItem>
-                <ListItem className={classes.listItem}>
-                  <Button
-                    color="transparent"
-                    className={
-                      classes.navLink + " " + classes.socialIconsButton
-                    }
-                  >
-                    <i
-                      className={
-                        classes.socialIcons +
-                        " " +
-                        classes.marginRight5 +
-                        " fab fa-instagram"
-                      }
-                    />{" "}
-                    Instagram
-                  </Button>
-                </ListItem>
-              </List>
-            }
-          />
+       
         </div>
       </div>
     </div>

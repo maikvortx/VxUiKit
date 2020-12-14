@@ -1,7 +1,5 @@
-import { Autocomplete } from "@material-ui/lab";
 import {
   defaultFont,
-  roseColor,
   warningColor,
   dangerColor,
   successColor,
@@ -13,7 +11,7 @@ import {
   dangerBoxShadow,
   container,
   primaryColor
-} from "../../../../assets/jss/ui-kit";
+} from "../../assets/jss/ui-kit";
 
 const snackbarContentStyle = {
   root: {

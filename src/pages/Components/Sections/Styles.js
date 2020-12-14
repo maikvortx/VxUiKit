@@ -10,6 +10,12 @@ export const Container = styled.div`
   margin: 0 auto;
   margin-top: 30px;
   align-items: center;
+  a {
+    color: #343434;
+    & :hover {
+      color: #cb1e25;
+    }
+  }
 `;
 export const Title = styled.div`
   h1, h2, h3, h4 {

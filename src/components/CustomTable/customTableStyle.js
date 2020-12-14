@@ -6,6 +6,7 @@ import {
 } from "../../assets/jss/ui-kit";
 
 const customTableStyle = {
+  
  
 };
 

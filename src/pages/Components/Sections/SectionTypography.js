@@ -1,16 +1,12 @@
 import React from "react";
-// // @material-ui/core components
-import { makeStyles } from "@material-ui/core/styles";
 
 // core components
 import GridContainer from "../../../components/Grid/GridContainer";
 import GridItem from "../../../components/Grid/GridItem";
 import Small from "../../../components/Typography/Small";
+import GetApp from "@material-ui/icons/GetApp";
 
-import styles from "../../../components/Typography/typographyStyle";
 import { Section, Container, Title, Text } from './Styles';
-
-const useStyles = makeStyles(styles);
 
 export default function SectionTypography() {
   return (
@@ -21,7 +17,10 @@ export default function SectionTypography() {
           <GridContainer>
             <GridItem xs={12} sm={5}>
               <Title>
-                <h3><span color={"#cb1e25"}>Josefin Sans</span> - Font Family</h3>
+                <h3>
+                  <span color={"#cb1e25"}>Josefin Sans</span> - Font Family
+                  <a href='fonts/josefinsans.zip' download><GetApp/></a>
+                </h3>
               </Title>
               <GridContainer>
                 <GridItem xs={12} sm={6}>
@@ -64,7 +63,10 @@ export default function SectionTypography() {
               </GridItem>
               <GridItem xs={12} sm={7}>
                 <Title fontFamily='Open Sans'>
-                  <h3><span color="#cb1e25">Open Sans</span> - Font Family</h3>
+                  <h3>
+                    <span color="#cb1e25">Open Sans</span> - Font Family
+                    <a href='fonts/Open_Sans.zip' download><GetApp/></a>
+                  </h3>
                 </Title>
                 <GridContainer>
                   <GridItem xs={12} sm={4}>

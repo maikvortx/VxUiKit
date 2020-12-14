@@ -1,151 +1,74 @@
-import React, {useState, useEffect} from "react";
-import classNames from "classnames";
-import PropTypes from "prop-types";
-//--- @material-ui/core components ---//
-import { makeStyles } from "@material-ui/core/styles";
-import AppBar from "@material-ui/core/AppBar";
-import Toolbar from "@material-ui/core/Toolbar";
-import IconButton from "@material-ui/core/IconButton";
-import Button from "@material-ui/core/Button";
-import Hidden from "@material-ui/core/Hidden";
-import Drawer from "@material-ui/core/Drawer";
-//--- @material-ui/icons ---//
-import Menu from "@material-ui/icons/Menu";
-//--- core components ---//
-import styles from "./headerStyle";
+import React from 'react';
+import { HeaderApp, NavBar, NavBarLeftSide, NavBarRightSide, Login, Logout, Menu, MenuDropDown, Bar, Slogan} from './styles';
 
-const useStyles = makeStyles(styles);
+function Header(props) {
+  const toggleMenu = () => {
+    const navbar = document.querySelectorAll('#navbar');
+    navbar.forEach(nav => nav.classList.toggle('Navbar__ToggleShow'));
+    const navs = document.querySelectorAll('#nav-items');
+    navs.forEach(nav => nav.classList.toggle('Navbar__ToggleShow'));
 
-export default function Header(props) {
-  const classes = useStyles();
-  const [mobileOpen, setMobileOpen] = useState(false);
-  useEffect(() => {
-    if (props.changeColorOnScroll) {
-      window.addEventListener("scroll", headerColorChange);
-    }
-    return function cleanup() {
-      if (props.changeColorOnScroll) {
-        window.removeEventListener("scroll", headerColorChange);
-      }
-    };
-  });
-  const handleDrawerToggle = () => {
-    setMobileOpen(!mobileOpen);
   };
-  const headerColorChange = () => {
-    const { color, changeColorOnScroll } = props;
-    const windowsScrollTop = window.pageYOffset;
-    if (windowsScrollTop > changeColorOnScroll.height) {
-      document.body
-        .getElementsByTagName("header")[0]
-        .classList.remove(classes[color]);
-      document.body
-        .getElementsByTagName("header")[0]
-        .classList.add(classes[changeColorOnScroll.color]);
-    } else {
-      document.body
-        .getElementsByTagName("header")[0]
-        .classList.add(classes[color]);
-      document.body
-        .getElementsByTagName("header")[0]
-        .classList.remove(classes[changeColorOnScroll.color]);
-    }
+
+  const logout = () => {
+    alert('Click no logout')
   };
-  const { color, rightLinks, leftLinks, brand, fixed, absolute } = props;
-  const appBarClasses = classNames({
-    [classes.appBar]: true,
-    [classes[color]]: color,
-    [classes.absolute]: absolute,
-    [classes.fixed]: fixed
-  });
-  const brandComponent =  <a href={'/'}>
-                            <img
-                              id="logo-vortx"
-                              className={classes.logo}
-                              src="https://cdn.vortx.com.br/images/logo-expanded-dourado.svg"
-                              alt="Logo Vórtx"
-                              title="Vórtx | Inovação e transparência em serviços fiduciários"
-                            />
-                          </a>
+
   return (
-    <AppBar className={appBarClasses}>
-      <Toolbar className={classes.container}>
-        {leftLinks !== undefined ? brandComponent : null}
-        <div className={classes.flex}>
-          {leftLinks !== undefined ? (
-            <Hidden smDown implementation="css">
-              {leftLinks}
-            </Hidden>
-          ) : (
-            brandComponent
-          )}
+    <HeaderApp id="header-app">
+      <NavBar id="navbar">
+        <NavBarLeftSide>
+          <a href="#">
+            <img
+              id="logo-vortx"
+              src="https://cdn.vortx.com.br/images/logo-expanded-dourado.svg"
+              alt="Logo Vórtx"
+              title="Vórtx | Inovação e transparência em serviços fiduciários"
+            />
+          </a>
+          <Menu onClick={toggleMenu}>
+            <Bar width="20px" className="bar1"></Bar>
+            <Bar width="30px" className="bar2"></Bar>
+            <Bar width="15px" className="bar3"></Bar>
+          </Menu>
+        </NavBarLeftSide>
+        <div>
+          <Slogan>
+            Tech Based. <span className="manuscrito">Dream</span> Powered.
+          </Slogan>
         </div>
-        <Hidden smDown implementation="css">
-          {rightLinks}
-        </Hidden>
-        <Hidden mdUp>
-          <IconButton
-            color="inherit"
-            aria-label="open drawer"
-            onClick={handleDrawerToggle}
+        <NavBarRightSide>
+          <Login>
+            usuário{' '}
+          </Login>
+          <Logout
+            onClick={logout}
+            rel="noopener noreferrer"
+            className="logout"
           >
-            <Menu />
-          </IconButton>
-        </Hidden>
-      </Toolbar>
-      <Hidden mdUp implementation="js">
-        <Drawer
-          variant="temporary"
-          anchor={"right"}
-          open={mobileOpen}
-          classes={{
-            paper: classes.drawerPaper
-          }}
-          onClose={handleDrawerToggle}
-        >
-          <div className={classes.appResponsive}>
-            {leftLinks}
-            {rightLinks}
-          </div>
-        </Drawer>
-      </Hidden>
-    </AppBar>
+            (Sair)
+          </Logout>
+        </NavBarRightSide>
+      </NavBar>
+      <MenuDropDown id="nav-items">
+        <div className="open-nav">
+          <li className="nav-sublinks">
+            <a href="#" rel="noopener noreferrer">
+              Link 1
+            </a>
+          </li>
+          <hr />
+          <li className="nav-sublinks">
+            <a href='#' rel="noopener noreferrer">
+              Link 2
+            </a>
+          </li>
+          <hr />
+        </div>
+        <div className="close-nav" onClick={toggleMenu}></div>
+      </MenuDropDown>
+    </HeaderApp>
   );
 }
 
-Header.defaultProp = {
-  color: "white"
-};
-
-Header.propTypes = {
-  color: PropTypes.oneOf([
-    "primary",
-    "info",
-    "success",
-    "warning",
-    "danger",
-    "transparent",
-    "white",
-    "rose",
-    "dark"
-  ]),
-  rightLinks: PropTypes.node,
-  leftLinks: PropTypes.node,
-  brand: PropTypes.string,
-  fixed: PropTypes.bool,
-  absolute: PropTypes.bool,
-  changeColorOnScroll: PropTypes.shape({
-    height: PropTypes.number.isRequired,
-    color: PropTypes.oneOf([
-      "primary",
-      "info",
-      "success",
-      "warning",
-      "danger",
-      "transparent",
-      "white",
-      "rose",
-      "dark"
-    ]).isRequired
-  })
-};
+export default Header;

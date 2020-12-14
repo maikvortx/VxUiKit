@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React from "react";
 // core components
 import GridContainer from "../../../components/Grid/GridContainer";
 import GridItem from "../../../components/Grid/GridItem";
@@ -25,7 +25,7 @@ export default function SectionCard() {
       <Container>
         <GridContainer>
           <GridItem xs={12} sm={12} md={6} bgColor={"#F7F7F7"}>
-            <Card onClick={handleModal}>
+            <Card onClick={handleModal} boxShadow={'1px 2px 2px 1px rgba(0, 0, 0, 0.25)'}>
               <CardBody>
                 <Title>
                   <h3>Card COM clique</h3>
@@ -37,7 +37,7 @@ export default function SectionCard() {
             </Card>
           </GridItem>
           <GridItem xs={12} sm={12} md={6} bgColor={"#F7F7F7"}>
-            <Card boxShadow={'unset'}>
+            <Card>
               <CardBody>
                 <Title>
                   <h3>Card SEM clique</h3>

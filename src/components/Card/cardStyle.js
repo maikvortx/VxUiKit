@@ -8,7 +8,7 @@ const cardStyle = {
     background: "#fff",
     width: "100%",
     border: "1px solid #C4C4C4",
-    boxShadow: props.boxShadow || "1px 2px 2px 1px rgba(0, 0, 0, 0.25) ",
+    boxShadow: props.boxShadow || "unset",
     position: "relative",
     display: "flex",
     flexDirection: "column",
@@ -16,10 +16,6 @@ const cardStyle = {
     wordWrap: "break-word",
     fontSize: ".875rem",
     transition: "all 300ms linear",
-    '& :hover': {
-      cursor: 'pointer',
-      boxShadow: props.boxShadow || "1px 2px 2px 1px rgba(0, 0, 0, 0.25) ",
-    }
   }),
   cardPlain: {
     background: "transparent",

@@ -3,9 +3,6 @@ import PropTypes from "prop-types";
 import classNames from "classnames";
 //--- @material-ui/core components ---//
 import { makeStyles } from "@material-ui/core/styles";
-import Box from '@material-ui/core/Box';
-import Collapse from '@material-ui/core/Collapse';
-import IconButton from '@material-ui/core/IconButton';
 import Table from '@material-ui/core/Table';
 import TableBody from '@material-ui/core/TableBody';
 import TableCell from '@material-ui/core/TableCell';
@@ -32,33 +29,33 @@ function createData(name, calories, fat, carbs, protein, price) {
     protein,
     price,
     history: [
-      { date: '2020-01-05', customerId: '11091700', amount: 3 },
-      { date: '2020-01-02', customerId: 'Anonymous', amount: 1 },
+      { date: '05/04/2020', dadoId: '11091700', valor: 3 },
+      { date: '07/04/2020', dadoId: 'Dado 1', valor: 1 },
     ],
   };
 }
 const rows = [
-  createData('Frozen yoghurt', 159, 6.0, 24, 4.0, 3.99),
-  createData('Ice cream sandwich', 237, 9.0, 37, 4.3, 4.99),
-  createData('Eclair', 262, 16.0, 24, 6.0, 3.79),
-  createData('Cupcake', 305, 3.7, 67, 4.3, 2.5),
-  createData('Gingerbread', 356, 16.0, 49, 3.9, 1.5),
+  createData('Dado 1', 159, 6.0, 24, 4.0, 3.99),
+  createData('Dado 2', 237, 9.0, 37, 4.3, 4.99),
+  createData('Dado 3', 262, 16.0, 24, 6.0, 3.79),
+  createData('Dado 4', 305, 3.7, 67, 4.3, 2.5),
+  createData('Dado 5', 356, 16.0, 49, 3.9, 1.5),
 ];
 
 export default function CustomTable(props) {
   const classes = useStyles();
 
   return (
-    <TableContainer component={Paper}>
+    <TableContainer>
       <Table aria-label="collapsible table" stickyHeader>
         <TableHead>
           <TableRow>
             <TableCell />
-            <TableCell>Dessert (100g serving)</TableCell>
-            <TableCell align="right">Calories</TableCell>
-            <TableCell align="right">Fat&nbsp;(g)</TableCell>
-            <TableCell align="right">Carbs&nbsp;(g)</TableCell>
-            <TableCell align="right">Protein&nbsp;(g)</TableCell>
+            <TableCell>Coluna 1</TableCell>
+            <TableCell align="right">Coluna 2</TableCell>
+            <TableCell align="right">Coluna 3</TableCell>
+            <TableCell align="right">Coluna 4</TableCell>
+            <TableCell align="right">Coluna 5</TableCell>
           </TableRow>
         </TableHead>
         <TableBody>

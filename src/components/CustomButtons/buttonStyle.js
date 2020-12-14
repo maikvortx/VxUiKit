@@ -144,6 +144,7 @@ const buttonStyle = {
   },
   
   simple: {
+    padding: 0,
     "&,&:focus,&:hover,&:visited": {
       color: "#FFFFFF",
       background: "transparent",

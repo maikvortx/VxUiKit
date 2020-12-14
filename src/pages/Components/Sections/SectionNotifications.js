@@ -5,7 +5,6 @@ import Warning from "@material-ui/icons/Warning";
 import Info from "@material-ui/icons/Info";
 // core components
 import SnackbarContent from "../../../components/Snackbar/SnackbarContent";
-import Clearfix from "../../../components/Clearfix/Clearfix";
 
 import { Section, Container, Title } from './Styles';
 
@@ -61,7 +60,6 @@ export default function SectionNotifications() {
         color="danger"
         icon={Info}
       />
-      <Clearfix />
     </Section>
   );
 }
