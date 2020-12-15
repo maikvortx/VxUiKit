@@ -1,7 +1,6 @@
 import React from "react";
 // @material-ui/core components
 import { makeStyles } from "@material-ui/core/styles";
-// @material-ui/icons
 
 // core components
 import GridContainer from "../../../components/Grid/GridContainer";
@@ -12,14 +11,14 @@ import ExemploIlustracao from "../../../assets/img/ex-ilustracao.png";
 import Stories from "../../../assets/img/stories.png";
 
 import styles from "../../../assets/jss/ui-kit/views/componentsSections/exampleStyle";
-import { Section, Container, Title, Subtitle, Text } from './Styles';
+import { Section, Container, Title, Text } from './Styles';
 
 const useStyles = makeStyles(styles);
 
 export default function SectionIlustrations() {
   const classes = useStyles();
   return (
-    <Section>
+    <Section id='illustrations'>
       <Container>
         <Title>
           <h2>Ilustrações</h2>
@@ -47,7 +46,7 @@ export default function SectionIlustrations() {
               <h3>Banco de ilustrações</h3>
             </Title>
             <Text width='inherit'>As ilustrações usadas são de um banco gratuito até pra uso comercial, disponibilizado pela  “Stories”. Com diversas ilustrações com o intuito de servir para ilustrar interfaces e peças digitais, na mesma existem diversos estilos, mas o atualmente usado é o “Bro”.</Text>
-            <a href="https://stories.freepik.com/how-it-works" target="_blank">
+            <a href="https://stories.freepik.com/how-it-works" target="_blank" rel="noreferrer">
               <img
                 src={Stories}
                 alt="..."

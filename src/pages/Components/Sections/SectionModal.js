@@ -1,4 +1,4 @@
-import React, {forwardRef, useState} from "react";
+import React from "react";
 // @material-ui/core components
 // @material-ui/icons
 import LibraryBooks from "@material-ui/icons/LibraryBooks";
@@ -8,10 +8,10 @@ import GridItem from "../../../components/Grid/GridItem";
 import Button from "../../../components/CustomButtons/Button";
 import { useModal } from '../../../components/Modal/Modal';
 
-import { Section, Container, Title, Text } from './Styles';
+import { Section, Container, Title } from './Styles';
 
 export default function SectionModal() {
-  const { setModal, unSetModal } = useModal();
+  const { setModal } = useModal();
 
   const handleModal = () => {
     setModal({
@@ -23,7 +23,7 @@ export default function SectionModal() {
   };
 
   return (
-    <Section>
+    <Section id="modal">
       <Container>
         <GridContainer>
           <GridItem xs={12} sm={12} md={5}>

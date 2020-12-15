@@ -69,6 +69,53 @@ const theme = createMuiTheme(
         root: {
           backgroundColor: "#F5F5F5",
         }
+      },
+      MuiTable: {
+        root: {
+          borderCollapse: "unset",
+          borderSpacing: "0 5px",
+        }
+      },
+      MuiTableCell: {
+        root: {
+          border: 'none',
+        },
+        head: {
+          fontFamily: "'Josefin Sans', sans-serif",
+          border: 'none',
+        },
+        body: {
+          fontFamily: "'Open Sans', sans-serif",
+          border: 'none',
+        },
+        stickyHeader: {
+          backgroundColor: "#ffffff",
+        }
+      },
+      MuiTableRow: {
+        root: {
+          backgroundColor: "#f7f7f7",
+          marginBottom: "5px",
+          '&:hover': {
+            boxShadow: "6px 6px 8px 0px rgba(52,52,52,0.17)",
+            cursor: "pointer",
+          }
+        },
+        head: {
+          textTransform: "capitalize",
+          backgroundColor: "#ffffff",
+          border: "none",
+          '&:hover': {
+            boxShadow: 'none;'
+          }
+        },
+        footer: {
+          backgroundColor: "#ffffff",
+          border: "none",
+          '&:hover': {
+            boxShadow: 'none;'
+          }
+        }
       }
     },
   },

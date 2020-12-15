@@ -35,10 +35,10 @@ export default function CustomTableRow(props) {
         <TableCell component="th" scope="row">
           {row.name}
         </TableCell>
-        <TableCell align="right">{row.calories}</TableCell>
-        <TableCell align="right">{row.fat}</TableCell>
-        <TableCell align="right">{row.carbs}</TableCell>
-        <TableCell align="right">{row.protein}</TableCell>
+        <TableCell align="right">{row.fundo}</TableCell>
+        <TableCell align="right">{row.emissor}</TableCell>
+        <TableCell align="right">{row.quantidade}</TableCell>
+        <TableCell align="right">{row.status}</TableCell>
       </TableRow>
       <TableRow>
         <TableCell style={{ paddingBottom: 0, paddingTop: 0 }} colSpan={6}>
@@ -65,7 +65,7 @@ export default function CustomTableRow(props) {
                       <TableCell>{historyRow.dadoId}</TableCell>
                       <TableCell align="right">{historyRow.valor}</TableCell>
                       <TableCell align="right">
-                        {Math.round(historyRow.valor * row.price * 100) / 100}
+                        {Math.round(historyRow.valor * row.valor * 100) / 100}
                       </TableCell>
                     </TableRow>
                   ))}

@@ -28,7 +28,6 @@ export default function CustomInput(props) {
     white,
     inputRootCustomClasses,
     success,
-    variant
   } = props;
 
   const labelClasses = classNames({

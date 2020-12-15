@@ -1,6 +1,5 @@
 const cardStyle = {
   card: (props) => ({
-    border: "0",
     marginBottom: "30px",
     marginTop: "30px",
     borderRadius: "4px",

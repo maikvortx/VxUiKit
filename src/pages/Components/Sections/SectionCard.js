@@ -9,23 +9,23 @@ import { useModal } from '../../../components/Modal/Modal';
 import { Section, Container, Title, Text } from './Styles';
 
 export default function SectionCard() {
-  const { setModal, unSetModal } = useModal();
+  const { setModal } = useModal();
 
   const handleModal = () => {
     setModal({
       title: 'Card COM clique',
       subtitle: 'Você clicou no card com clique!',
       body: 'Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind',
-      button: 'Botão',
+      button: 'Fechar',
     });
   };
 
   return (
-    <Section bgColor={"#F7F7F7"}>
+    <Section bgColor={"#F7F7F7"} id="card">
       <Container>
         <GridContainer>
           <GridItem xs={12} sm={12} md={6} bgColor={"#F7F7F7"}>
-            <Card onClick={handleModal} boxShadow={'1px 2px 2px 1px rgba(0, 0, 0, 0.25)'}>
+            <Card onClick={handleModal} className="card-clicavel" boxShadow={'1px 3px 4px 1px rgba(0, 0, 0, 0.25)'}>
               <CardBody>
                 <Title>
                   <h3>Card COM clique</h3>

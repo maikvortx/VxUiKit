@@ -22,7 +22,7 @@ const useStyles = makeStyles(styles);
 export default function SectionExamples() {
   const classes = useStyles();
   return (
-    <Section>
+    <Section id='prototipos'>
       <Container>
         <Title>
           <h2>Protótipos</h2>

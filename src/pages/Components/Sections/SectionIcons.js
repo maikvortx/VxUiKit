@@ -1,6 +1,4 @@
 import React from "react";
-// // @material-ui/core components
-import { makeStyles } from "@material-ui/core/styles";
 
 // core components
 import GridContainer from "../../../components/Grid/GridContainer";
@@ -81,14 +79,14 @@ export default function SectionTypography() {
   return (
     <Section>
       <Container>
-        <div id="typography">
+        <div id="icons">
           <Title><h3>Ícones</h3></Title>
           <GridContainer>
             <GridItem xs={12} sm={5}>
               <Text>
                 A ideia é utilizar da biblioteca inteira do ‘Material Design’, no caso os icones são na versão “rounded”. Podem ser utilizados como representação visual de algo e até como icones/botões de ações. As divisões trazidas aqui são as mais usadas do Material Design (Nem todas foram usadas dentro dos produtos da Vórtx), para ver a lista completa só ir na própria biblioteca:
               </Text>
-              <a href="https://material-ui.com/pt/components/icons/" target="_blank">
+              <a href="https://material-ui.com/pt/components/icons/" target="_blank" rel="noreferrer">
                 <Button color="primary" size="lg" simple>
                   Ver mais ícones >
                 </Button>

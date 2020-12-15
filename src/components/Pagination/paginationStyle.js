@@ -8,7 +8,9 @@ const paginationStyle = {
     display: "inline-block",
     paddingLeft: "0",
     margin: "0 0 20px 0",
-    borderRadius: "4px"
+    borderRadius: "4px",
+    width: "100%",
+    textAlign: "right",
   },
   paginationItem: {
     display: "inline"
@@ -32,7 +34,6 @@ const paginationStyle = {
     textTransform: "uppercase",
     background: "transparent",
     position: "relative",
-    float: "left",
     textDecoration: "none",
     boxSizing: "border-box",
     "&,&:hover,&:focus": {

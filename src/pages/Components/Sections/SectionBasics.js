@@ -1,13 +1,11 @@
-import React, {useState, useEffect} from "react";
+import React, {useState} from "react";
 // @material-ui/core components
 import { makeStyles } from "@material-ui/core/styles";
-import InputAdornment from "@material-ui/core/InputAdornment";
 import FormControlLabel from "@material-ui/core/FormControlLabel";
 import Checkbox from "@material-ui/core/Checkbox";
 import Radio from "@material-ui/core/Radio";
 import Switch from "@material-ui/core/Switch";
 // @material-ui/icons
-import People from "@material-ui/icons/People";
 import Check from "@material-ui/icons/Check";
 import FiberManualRecord from "@material-ui/icons/FiberManualRecord";
 // core components
@@ -16,7 +14,7 @@ import GridItem from "../../../components/Grid/GridItem";
 import Badge from "../../../components/Badge/Badge";
 
 import styles from "../../../assets/jss/ui-kit/views/componentsSections/basicsStyle";
-import { Section, Container, Title, Subtitle } from './Styles';
+import { Section, Container, Title } from './Styles';
 
 const useStyles = makeStyles(styles);
 
@@ -341,11 +339,11 @@ export default function SectionBasics() {
                 />
               </div>
             </GridItem>
-          </GridContainer>
+          {/* </GridContainer>
         </div>
         <div id="sliders">
-          <GridContainer>
-            <GridItem xs={12} sm={12} md={6}>
+          <GridContainer> */}
+            <GridItem xs={12} sm={12} md={6} lg={3}>
               <Title>
                 <h3>Badges</h3>
               </Title>
@@ -354,8 +352,6 @@ export default function SectionBasics() {
               <Badge color="info">info</Badge>
               <Badge color="success">success</Badge>
               <Badge color="warning">warning</Badge>
-              <Badge color="danger">danger</Badge>
-              <Badge color="rose">rose</Badge>
             </GridItem>
           </GridContainer>
         </div>

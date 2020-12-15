@@ -1,5 +1,3 @@
-import { BorderBottom } from "@material-ui/icons";
-
 const customTabsStyle = {
   cardTitle: {
     float: "left",

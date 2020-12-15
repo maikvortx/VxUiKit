@@ -6,7 +6,6 @@ import { makeStyles } from "@material-ui/core/styles";
 
 // @material-ui/icons
 // core components
-// import Header from "../../components/Header/Header";
 import Header from "../../components/Header/Header";
 import Footer from "../../components/Footer/Footer";
 import GridContainer from "../../components/Grid/GridContainer";
@@ -32,14 +31,13 @@ import SectionIlustrations from "./Sections/SectionIlustrations";
 import SectionExamples from "./Sections/SectionExamples";
 
 import styles from "../../assets/jss/ui-kit/views/components";
-import { Section, Container, Title } from './styles';
+import { Container, Title } from './styles';
 
 
 const useStyles = makeStyles(styles);
 
 export default function Components(props) {
   const classes = useStyles();
-  const { ...rest } = props;
   return (
     <div>
       {/* <Header

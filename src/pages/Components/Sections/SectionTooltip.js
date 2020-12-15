@@ -15,7 +15,7 @@ const useStyles = makeStyles(styles);
 export default function SectionTooltip() {
   const classes = useStyles();
   return (
-    <Section>
+    <Section id="tooltip">
       <Container>
         <GridContainer>
           <GridItem xs={12} sm={12} md={6}>

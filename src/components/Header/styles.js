@@ -34,16 +34,19 @@ export const HeaderApp = styled.section`
     position: fixed;
     box-shadow: 6px 6px 8px 0px rgba(52, 52, 52, 0.17);
     top: 0;
-    padding-top: 80px;
+    padding-top: 60px;
   }
 
   & .Navbar__ToggleShow > .open-nav > .nav-sublinks {
     color: #343434;
     display: block;
-    padding: 40px;
-    font-size: 18px;
+    padding: 15px;
     font-weight: 500;
     text-align: center;
+    & a {
+      text-decoration: none;
+      color: #343434;
+    }
   }
 
   & .Navbar__ToggleShow > .open-nav > .nav-sublinks:hover,
@@ -121,8 +124,9 @@ export const NavBarLeftSide = styled.div`
 
 export const Menu = styled.div`
   font-size: 25px;
-  margin-top: 12px;
+  margin: 12px 0 12px 10px;
   padding-left: 20px;
+  border-left: 1px solid #EBEBF2;
   cursor: pointer;
 `;
 export const Bar = styled.div`
@@ -137,6 +141,7 @@ export const Slogan = styled.p`
   font-size: 14px;
   letter-spacing: 0;
   margin-bottom: 0;
+  font-family: 'Josefin Sans';
   & span {
     font-size: 25px;
     color: #8e734a;
@@ -147,10 +152,11 @@ export const Slogan = styled.p`
 `;
 
 export const NavBarRightSide = styled.div`
-  padding: 0px;
   display: flex;
   max-width: 350px;
   align-items: baseline;
+  border-left: 1px solid #EBEBF2;
+  padding-left: 20px;
   & a li {
     list-style: none;
   }

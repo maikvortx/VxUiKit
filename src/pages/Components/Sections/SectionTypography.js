@@ -15,7 +15,7 @@ export default function SectionTypography() {
         <div id="typography">
           <Title><h3>Tipografia</h3></Title>
           <GridContainer>
-            <GridItem xs={12} sm={5}>
+            <GridItem xs={12} sm={12} md={6}>
               <Title>
                 <h3>
                   <span color={"#cb1e25"}>Josefin Sans</span> - Font Family
@@ -23,7 +23,7 @@ export default function SectionTypography() {
                 </h3>
               </Title>
               <GridContainer>
-                <GridItem xs={12} sm={6}>
+                <GridItem xs={12} sm={6} md={4}>
                   <Title>
                     <h1>H1 -Título</h1>
                     <p>Josefin Sans Regular - 48pt</p>
@@ -41,7 +41,7 @@ export default function SectionTypography() {
                     <p>Josefin Sans Regular - 24pt</p>
                   </Title>
                 </GridItem>
-                <GridItem xs={12} sm={6}>
+                <GridItem xs={12} sm={6} md={4}>
                   <div>
                     <h1 fontWeight={700}>H1 -Título</h1>
                     <p>Josefin Sans Bold - 48pt</p>
@@ -61,7 +61,7 @@ export default function SectionTypography() {
                 </GridItem>
               </GridContainer>
               </GridItem>
-              <GridItem xs={12} sm={7}>
+              <GridItem xs={12} sm={12} md={6}>
                 <Title fontFamily='Open Sans'>
                   <h3>
                     <span color="#cb1e25">Open Sans</span> - Font Family
@@ -69,7 +69,7 @@ export default function SectionTypography() {
                   </h3>
                 </Title>
                 <GridContainer>
-                  <GridItem xs={12} sm={4}>
+                  <GridItem xs={12} sm={4} md={4}>
                     <div>
                       <Title fontFamily='Open Sans'>
                         <h1>H1 - Título</h1>
@@ -95,7 +95,7 @@ export default function SectionTypography() {
                       <p>Open Sans - 24pt</p>
                     </div>
                   </GridItem>
-                  <GridItem xs={12} sm={4}>
+                  <GridItem xs={12} sm={4} md={4}>
                     <div>
                       <Title fontFamily='Open Sans' fontWeight={600}>
                         <h1>H1 - Título</h1>
@@ -121,7 +121,7 @@ export default function SectionTypography() {
                       <p>Open Sans Semi-bold - 24pt</p>
                     </div>
                   </GridItem>
-                  <GridItem xs={12} sm={4}>
+                  <GridItem xs={12} sm={4} md={4}>
                     <div>
                       <Title fontFamily='Open Sans' fontWeight={700}>
                         <h1>H1 - Título</h1>
@@ -151,7 +151,7 @@ export default function SectionTypography() {
               </GridItem>
           </GridContainer>
           <GridContainer>
-            <GridItem xs={12} sm={6}>
+            <GridItem xs={12} sm={12} md={5}>
               <Title><h3><small>Parágrafo</small></h3></Title>
               <Text width={'90%'}>
                 I will be the leader of a company that ends up being worth
@@ -161,7 +161,7 @@ export default function SectionTypography() {
                 that things could be at.
               </Text>
             </GridItem>
-            <GridItem xs={12} sm={6}>
+            <GridItem xs={12} sm={12} md={5}>
               <Title>
                 <h2>Header with small subtitle <br />
                   <Small>Use {'"Small"'} tag for the headers</Small>

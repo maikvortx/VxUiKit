@@ -10,7 +10,7 @@ import { Box, Tag } from './SectionColorsStyles';
 
 export default function SectionColors() {
   return (
-    <Section>
+    <Section id='cores'>
       <Container>
         <Title color={'#525252'}>
           <h2>Elementos básicos</h2>
