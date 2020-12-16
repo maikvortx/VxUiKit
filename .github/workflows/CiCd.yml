@@ -33,5 +33,5 @@ jobs:
       - name: Deploy
         run : |
               aws ecr get-login-password --region sa-east-1 | docker login --username AWS --password-stdin 565724443166.dkr.ecr.sa-east-1.amazonaws.com             
-              docker push 565724443166.dkr.ecr.sa-east-1.amazonaws.com/docs:latest
+              docker push 565724443166.dkr.ecr.sa-east-1.amazonaws.com/vxuikit:latest
               aws ecs update-service --cluster vxuikit --service SVC-vxuikit --force-new-deployment
