@@ -1,11 +1,12 @@
 import React from "react";
 // @material-ui/core components
 import { makeStyles } from "@material-ui/core/styles";
-
+// @material-ui/icons
+import { ArrowRightRounded } from '@material-ui/icons';
 // core components
 import GridContainer from "../../../components/Grid/GridContainer";
 import GridItem from "../../../components/Grid/GridItem";
-import Button from "../../../components/CustomButtons/Button";
+import Button from "../../../components/Buttons/Button";
 
 import ExemploIlustracao from "../../../assets/img/ex-ilustracao.png";
 import Stories from "../../../assets/img/stories.png";
@@ -59,7 +60,7 @@ export default function SectionIlustrations() {
                 }
               />
               <Button color="primary" size="lg" simple>
-                Stories - by Freepik
+                Stories - by Freepik <ArrowRightRounded/>
               </Button>
             </a>
           </GridItem>

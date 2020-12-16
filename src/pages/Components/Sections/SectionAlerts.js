@@ -8,9 +8,9 @@ import SnackbarContent from "../../../components/Snackbar/SnackbarContent";
 
 import { Section, Container, Title } from './Styles';
 
-export default function SectionNotifications() {
+export default function SectionAlerts() {
   return (
-    <Section id="notifications">
+    <Section id="alerts">
       <Container>
         <Title>
           <h3>Alertas</h3>

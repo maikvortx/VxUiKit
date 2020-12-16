@@ -1,8 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
-import classNames from "classnames";
 //--- @material-ui/core components ---//
-import { makeStyles } from "@material-ui/core/styles";
 import Table from '@material-ui/core/Table';
 import TableBody from '@material-ui/core/TableBody';
 import TableCell from '@material-ui/core/TableCell';
@@ -10,18 +8,14 @@ import TableContainer from '@material-ui/core/TableContainer';
 import TableHead from '@material-ui/core/TableHead';
 import TableRow from '@material-ui/core/TableRow';
 import TableFooter from '@material-ui/core/TableFooter';
-import Row from './CustomTableRow';
+import Row from './TableRows';
 import Pagination from '../Pagination/Pagination'
 
-import styles from "./customTableStyle";
-
-const useStyles = makeStyles(styles);
-
-function createData(name, fundo, emissor, quantidade, status, valor) {
+function createData(name, fundo, tipo, quantidade, status, valor) {
   return {
     name,
     fundo,
-    emissor,
+    tipo,
     quantidade,
     status,
     valor,
@@ -32,27 +26,26 @@ function createData(name, fundo, emissor, quantidade, status, valor) {
   };
 }
 const rows = [
-  createData('Dado 1', 159, 6.0, 24, "Em Análise", 3.99),
-  createData('Dado 2', 237, 9.0, 37, "Aprovado", 4.99),
-  createData('Dado 3', 262, 16.0, 24, "Cancelado", 3.79),
-  createData('Dado 4', 305, 3.7, 67, "Em Análise", 2.5),
-  createData('Dado 5', 356, 16.0, 49, "Aprovado", 1.5),
+  createData('Operação', 9999999999, 'DEB', 999999999999, "Em Análise", 3.99),
+  createData('Fundo de investimento', 9999999999, 'CRI', 9999999999, "Aprovado", 4.99),
+  createData('Certificado de Recebíveis do Agronegócio', 999999999999, 'CRA', 999999999, "Cancelado", 3.79),
+  createData('Certificado de Recebíveis Imobiliário', 999999999999, 'NP', 999999999999, "Em Análise", 2.5),
+  createData('Debêntures', 99999999999, 'CRI', 999999999999, "Aprovado", 1.5),
 ];
 
-export default function CustomTable(props) {
-  const classes = useStyles();
+export default function Tables(props) {
 
   return (
     <TableContainer>
       <Table aria-label="collapsible table" stickyHeader>
         <TableHead>
           <TableRow>
-            <TableCell />
             <TableCell>Coluna 1</TableCell>
-            <TableCell align="right">Coluna 2</TableCell>
+            <TableCell align="left">Coluna 2</TableCell>
             <TableCell align="right">Coluna 3</TableCell>
             <TableCell align="right">Coluna 4</TableCell>
-            <TableCell align="right">Coluna 5</TableCell>
+            <TableCell align="left">Coluna 5</TableCell>
+            <TableCell />
           </TableRow>
         </TableHead>
         <TableBody>
@@ -61,8 +54,7 @@ export default function CustomTable(props) {
           ))}
         </TableBody>
         <TableFooter>
-          <TableRow>
-          </TableRow>
+          <TableRow/>
         </TableFooter>
       </Table>
       <Pagination pageCount={20}/>
@@ -70,7 +62,7 @@ export default function CustomTable(props) {
   );
 }
 
-CustomTable.propTypes = {
+Tables.propTypes = {
   labelText: PropTypes.node,
   labelProps: PropTypes.object,
   id: PropTypes.string,

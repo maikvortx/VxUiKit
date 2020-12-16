@@ -3,8 +3,8 @@ import React from "react";
 // core components
 import GridContainer from "../../../components/Grid/GridContainer";
 import GridItem from "../../../components/Grid/GridItem";
-import Button from "../../../components/CustomButtons/Button";
-import DatePicker from "../../../components/CustomDatePicker/CustomDatePicker";
+import Button from "../../../components/Buttons/Button";
+import DatePicker from "../../../components/DatePicker/DatePickers";
 
 // icons components
 import {
@@ -73,7 +73,8 @@ import {
 } from '@material-ui/icons';
 
 import { Section, Container, Title, Text } from './Styles';
-import { Card } from "@material-ui/core";
+import Card from "../../../components/Card/Card";
+import CardBody from "../../../components/Card/CardBody";
 
 export default function SectionTypography() {
   return (
@@ -88,7 +89,7 @@ export default function SectionTypography() {
               </Text>
               <a href="https://material-ui.com/pt/components/icons/" target="_blank" rel="noreferrer">
                 <Button color="primary" size="lg" simple>
-                  Ver mais ícones >
+                  Ver mais ícones <ArrowRightRounded/>
                 </Button>
               </a>
               </GridItem>
@@ -211,11 +212,19 @@ export default function SectionTypography() {
               <Text>
               Exemplo em cards (VxInforma). Exemplo:
               </Text>
-              <Card/>
+              <Card width={'50%'}> 
+                <CardBody>
+                  <h5>Vencidas</h5>
+                  <div style={{display: 'flex', justifyContent: "space-between"}}>
+                    <h3>12</h3><WarningRounded style={{fontSize: "60", color: "#cb1e25"}}/>
+                  </div>
+                  
+                </CardBody>
+              </Card>
             </GridItem>
           </GridContainer>
         </div>
       </Container>
     </Section>
   );
-}
+};

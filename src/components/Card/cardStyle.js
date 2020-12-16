@@ -4,8 +4,8 @@ const cardStyle = {
     marginTop: "30px",
     borderRadius: "4px",
     color: "rgba(0, 0, 0, 0.87)",
-    background: "#fff",
-    width: "100%",
+    backgroundColor: "#fff",
+    width: props.width || "100%",
     border: "1px solid #C4C4C4",
     boxShadow: props.boxShadow || "unset",
     position: "relative",
@@ -22,6 +22,14 @@ const cardStyle = {
   },
   cardCarousel: {
     overflow: "hidden"
+  },
+  clickable: {
+    boxShadow: '1px 3px 4px 1px rgba(0, 0, 0, 0.25)',
+    "&:hover,&:focus": {
+      backgroundColor:'rgb(245, 245, 245)',
+      transition: 'all 0.3s ease 0s',
+      cursor: 'pointer',
+    }
   }
 };
 

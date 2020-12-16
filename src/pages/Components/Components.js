@@ -20,7 +20,7 @@ import SectionButton from "./Sections/SectionButton";
 import SectionInputs from "./Sections/SectionInputs";
 import SectionPagination from "./Sections/SectionPagination";
 import SectionTabs from "./Sections/SectionTabs";
-import SectionNotifications from "./Sections/SectionNotifications";
+import SectionAlerts from "./Sections/SectionAlerts";
 import SectionTypography from "./Sections/SectionTypography";
 import SectionIcons from "./Sections/SectionIcons";
 import SectionModal from "./Sections/SectionModal";
@@ -75,7 +75,7 @@ export default function Components(props) {
         <SectionBasics />
         <SectionPagination />
         <SectionTabs />
-        <SectionNotifications />
+        <SectionAlerts />
         <SectionTypography />
         <SectionModal />
         <SectionTooltip />

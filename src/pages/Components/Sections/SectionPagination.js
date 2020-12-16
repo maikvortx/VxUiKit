@@ -18,7 +18,8 @@ export default function SectionPagination() {
                 <h3>Paginação</h3>
               </Title>
               <GridItem xs={12} sm={12} md={6}>
-                <Pagination />
+                <Pagination pageCount={7}/>
+                <Pagination pageCount={20}/>
               </GridItem>
               </GridItem>
             </GridContainer>

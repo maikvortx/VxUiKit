@@ -5,9 +5,9 @@ import Tooltip from "@material-ui/core/Tooltip";
 // core components
 import GridContainer from "../../../components/Grid/GridContainer";
 import GridItem from "../../../components/Grid/GridItem";
-import Button from "../../../components/CustomButtons/Button";
+import Button from "../../../components/Buttons/Button";
 
-import styles from "../../../assets/jss/ui-kit/tooltipsStyle";
+import styles from "./SectionTooltipsStyle";
 import { Section, Container, Title } from './Styles';
 
 const useStyles = makeStyles(styles);

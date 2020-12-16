@@ -25,7 +25,7 @@ export default function SectionCard() {
       <Container>
         <GridContainer>
           <GridItem xs={12} sm={12} md={6} bgColor={"#F7F7F7"}>
-            <Card onClick={handleModal} className="card-clicavel" boxShadow={'1px 3px 4px 1px rgba(0, 0, 0, 0.25)'}>
+            <Card onClick={handleModal} boxShadow={'1px 3px 4px 1px rgba(0, 0, 0, 0.25)'} clickable>
               <CardBody>
                 <Title>
                   <h3>Card COM clique</h3>

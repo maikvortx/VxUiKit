@@ -8,9 +8,8 @@ import GridItem from "../../../components/Grid/GridItem";
 import CustomTabs from "../../../components/CustomTabs/CustomTabs";
 
 import { Section, Container, Title } from './Styles';
-import styles from "../../../assets/jss/ui-kit/views/componentsSections/tabsStyle";
 
-const useStyles = makeStyles(styles);
+const useStyles = makeStyles();
 
 export default function SectionTabs() {
   const classes = useStyles();

@@ -7,11 +7,11 @@ import {Error, Search} from "@material-ui/icons";
 // core components
 import GridContainer from "../../../components/Grid/GridContainer";
 import GridItem from "../../../components/Grid/GridItem";
-import Input from "../../../components/CustomInput/CustomInput";
+import Input from "../../../components/Input/Input";
 
 import { Section, Container, Title } from './Styles';
 import Dropdown from "../../../components/Dropdown/Dropdown";
-import DatePicker from "../../../components/CustomDatePicker/CustomDatePicker";
+import DatePicker from "../../../components/DatePicker/DatePickers";
 
 
 export default function SectionInputs() {

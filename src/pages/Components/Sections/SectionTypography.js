@@ -22,6 +22,7 @@ export default function SectionTypography() {
                   <a href='fonts/josefinsans.zip' download><GetApp/></a>
                 </h3>
               </Title>
+              <Text width="100">Utilizada em títulos, subtítulos e em botões de maior destaque.</Text>
               <GridContainer>
                 <GridItem xs={12} sm={6} md={4}>
                   <Title>
@@ -68,6 +69,7 @@ export default function SectionTypography() {
                     <a href='fonts/Open_Sans.zip' download><GetApp/></a>
                   </h3>
                 </Title>
+                <Text width="100">Utilizada em textos corridos, ode ser utilizado em subtitulos (bold), em casos onde a Josefin não se encaixa, como por exemplo as labels de inputs campos e quando estamos utilizando apenas a Josefin de titulo.</Text>
                 <GridContainer>
                   <GridItem xs={12} sm={4} md={4}>
                     <div>

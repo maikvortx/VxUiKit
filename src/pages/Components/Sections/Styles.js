@@ -12,6 +12,7 @@ export const Container = styled.div`
   align-items: center;
   a {
     color: #343434;
+    text-decoration: none;
     & :hover {
       color: #cb1e25;
     }

@@ -1,7 +1,5 @@
 import styled from 'styled-components';
 
-
-
 export const DatePickerContainer = styled.div`
     display: flex;
     align-items: flex-start;

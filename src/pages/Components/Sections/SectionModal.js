@@ -5,7 +5,7 @@ import LibraryBooks from "@material-ui/icons/LibraryBooks";
 // core components
 import GridContainer from "../../../components/Grid/GridContainer";
 import GridItem from "../../../components/Grid/GridItem";
-import Button from "../../../components/CustomButtons/Button";
+import Button from "../../../components/Buttons/Button";
 import { useModal } from '../../../components/Modal/Modal';
 
 import { Section, Container, Title } from './Styles';

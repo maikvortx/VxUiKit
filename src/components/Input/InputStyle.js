@@ -5,7 +5,7 @@ import {
   defaultFont
 } from "../../assets/jss/ui-kit";
 
-const customInputStyle = {
+const InputStyle = {
   disabled: {
     backgroundColor: '#F7F7F7',
     "&:before": {
@@ -88,4 +88,4 @@ const customInputStyle = {
   }
 };
 
-export default customInputStyle;
+export default InputStyle;

@@ -11,7 +11,7 @@ import {endOfDay} from 'date-fns';
 import pt from 'date-fns/locale/pt';
 registerLocale('pt-BR', pt)
 
-export default function CustomDatePicker() {
+export default function DatePickers() {
   const [dataInicio, setDataInicio] = useState();
   const [dataFim, setDataFim] = useState();
   
