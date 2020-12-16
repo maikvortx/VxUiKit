@@ -8,11 +8,11 @@ import FormHelperText from "@material-ui/core/FormHelperText";
 import InputLabel from "@material-ui/core/InputLabel";
 import OutlinedInput from "@material-ui/core/OutlinedInput";
 
-import styles from "./customInputStyle";
+import styles from "./InputStyle";
 
 const useStyles = makeStyles(styles);
 
-export default function CustomInput(props) {
+export default function Input(props) {
   const classes = useStyles();
   const {
     formControlProps,
@@ -28,7 +28,6 @@ export default function CustomInput(props) {
     white,
     inputRootCustomClasses,
     success,
-    variant
   } = props;
 
   const labelClasses = classNames({
@@ -89,7 +88,7 @@ export default function CustomInput(props) {
   );
 }
 
-CustomInput.propTypes = {
+Input.propTypes = {
   labelText: PropTypes.node,
   labelProps: PropTypes.object,
   id: PropTypes.string,

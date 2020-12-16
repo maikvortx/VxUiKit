@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { Event, Close } from '@material-ui/icons';
 import DatePicker from 'react-datepicker';
 import 'react-datepicker/dist/react-datepicker.css';
@@ -11,7 +11,7 @@ import {endOfDay} from 'date-fns';
 import pt from 'date-fns/locale/pt';
 registerLocale('pt-BR', pt)
 
-export default function CustomDatePicker() {
+export default function DatePickers() {
   const [dataInicio, setDataInicio] = useState();
   const [dataFim, setDataFim] = useState();
   

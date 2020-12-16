@@ -1,6 +1,5 @@
 import React, {useState} from "react";
 import PropTypes from "prop-types";
-import classNames from "classnames";
 //--- @material-ui/core components ---//
 import { makeStyles } from "@material-ui/core/styles";
 import Box from '@material-ui/core/Box';
@@ -14,31 +13,30 @@ import TableRow from '@material-ui/core/TableRow';
 import Typography from '@material-ui/core/Typography';
 import KeyboardArrowDownIcon from '@material-ui/icons/KeyboardArrowDown';
 import KeyboardArrowUpIcon from '@material-ui/icons/KeyboardArrowUp';
+import { FormatHelper } from '../../extensions/format-extension';
 
-import styles from "./customTableStyle";
+const useStyles = makeStyles();
 
-const useStyles = makeStyles(styles);
-
-export default function CustomTableRow(props) {
+export default function TableRows(props) {
   const { row } = props;
   const [open, setOpen] = useState(false);
   const classes = useStyles();
 
   return (
     <>
-      <TableRow className={classes.root}>
-        <TableCell>
+      <TableRow className={classes.root} onClick={() => setOpen(!open)}>
+        <TableCell component="th" scope="row" width='20%'>
+          {row.name}
+        </TableCell>
+        <TableCell align="left" width='5%'>{row.tipo}</TableCell>
+        <TableCell align="right" width='15%'>R$ {FormatHelper.formatCurrencyValue(row.fundo)}</TableCell>
+        <TableCell align="right" width='15%'>R$ {FormatHelper.formatCurrencyValue(row.quantidade)}</TableCell>
+        <TableCell align="left" width='10%'>{row.status}</TableCell>
+        <TableCell width='5%'>
           <IconButton aria-label="expand row" size="small" onClick={() => setOpen(!open)}>
             {open ? <KeyboardArrowUpIcon /> : <KeyboardArrowDownIcon />}
           </IconButton>
         </TableCell>
-        <TableCell component="th" scope="row">
-          {row.name}
-        </TableCell>
-        <TableCell align="right">{row.calories}</TableCell>
-        <TableCell align="right">{row.fat}</TableCell>
-        <TableCell align="right">{row.carbs}</TableCell>
-        <TableCell align="right">{row.protein}</TableCell>
       </TableRow>
       <TableRow>
         <TableCell style={{ paddingBottom: 0, paddingTop: 0 }} colSpan={6}>
@@ -65,7 +63,7 @@ export default function CustomTableRow(props) {
                       <TableCell>{historyRow.dadoId}</TableCell>
                       <TableCell align="right">{historyRow.valor}</TableCell>
                       <TableCell align="right">
-                        {Math.round(historyRow.valor * row.price * 100) / 100}
+                        R$ {FormatHelper.formatCurrencyValue(Math.round(historyRow.valor * row.valor * 100) / 100)}
                       </TableCell>
                     </TableRow>
                   ))}
@@ -79,7 +77,7 @@ export default function CustomTableRow(props) {
   );
 }
 
-CustomTableRow.propTypes = {
+TableRows.propTypes = {
   labelText: PropTypes.node,
   labelProps: PropTypes.object,
   id: PropTypes.string,

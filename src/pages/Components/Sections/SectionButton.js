@@ -6,7 +6,7 @@ import InsertDriveFile from "@material-ui/icons/InsertDriveFile";
 // core components
 import GridContainer from "../../../components/Grid/GridContainer";
 import GridItem from "../../../components/Grid/GridItem";
-import Button from "../../../components/CustomButtons/Button";
+import Button from "../../../components/Buttons/Button";
 
 import { Section, Container, Title } from './Styles';
 

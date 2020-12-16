@@ -17,7 +17,6 @@ const buttonStyle = {
     color: "#FFFFFF",
     boxShadow: "0px 1px 4px rgba(0, 0, 0, 0.25)",
     border: "none",
-    borderRadius: "4px",
     position: "relative",
     padding: "15px 50px",
     margin: ".3125rem 1px",
@@ -128,14 +127,6 @@ const buttonStyle = {
       boxShadow: "0px 2px 4px rgba(0, 0, 0, 0.25)",
     }
   },
-  rose: {
-    backgroundColor: roseColor,
-    boxShadow: "0px 1px 4px rgba(0, 0, 0, 0.25)",
-    "&:hover,&:focus": {
-      backgroundColor: roseColor,
-      boxShadow: "0px 2px 4px rgba(0, 0, 0, 0.25)",
-    }
-  },
   white: {
     "&,&:focus,&:hover,&:visited": {
       backgroundColor: "#FFFFFF",
@@ -202,7 +193,10 @@ const buttonStyle = {
     padding: "1.75rem 6.25rem",
     fontSize: "1.2rem",
     lineHeight: "1.333333",
-    borderRadius: "0.3rem"
+    borderRadius: "0.3rem",
+    "&$simple": {
+      padding: "1.75rem 0",
+    }
   },
   sm: {
     padding: "0.40625rem 1.25rem",

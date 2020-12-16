@@ -1,3 +1,12 @@
+import {
+  defaultFont,
+  primaryColor,
+  infoColor,
+  successColor,
+  warningColor,
+  dangerColor
+} from "../../assets/jss/ui-kit";
+
 const typographyStyle = {
   typo: {
     paddingLeft: "25%",
@@ -19,6 +28,35 @@ const typographyStyle = {
     position: "absolute",
     width: "260px"
   },
+  defaultFontStyle: {
+    ...defaultFont,
+    fontSize: "14px"
+  },
+  defaultHeaderMargins: {
+    marginTop: "20px",
+    marginBottom: "10px"
+  },
+  primaryText: {
+    color: primaryColor
+  },
+  infoText: {
+    color: infoColor
+  },
+  successText: {
+    color: successColor
+  },
+  warningText: {
+    color: warningColor
+  },
+  dangerText: {
+    color: dangerColor
+  },
+  smallText: {
+    fontSize: "65%",
+    fontWeight: "400",
+    lineHeight: "1",
+    color: "#777"
+  }
 };
 
 export default typographyStyle;

@@ -7,7 +7,7 @@ import { makeStyles } from "@material-ui/core/styles";
 import {FormControl, Select, InputLabel, MenuItem, FormHelperText, Checkbox, ListItemText } from '@material-ui/core';
 
 // core components
-import styles from "./customDropdownStyle";
+import styles from "./DropdownStyle";
 
 const useStyles = makeStyles(styles);
 
@@ -29,7 +29,7 @@ const optionsData = [
     label: 'Opção 4',
   },
 ];
-export default function CustomDropdown(props) {
+export default function Dropdown(props) {
   const classes = useStyles();
   const {
     formControlProps,
@@ -116,12 +116,12 @@ export default function CustomDropdown(props) {
   );
 }
 
-CustomDropdown.defaultProps = {
+Dropdown.defaultProps = {
   caret: true,
   hoverColor: "primary"
 };
 
-CustomDropdown.propTypes = {
+Dropdown.propTypes = {
   hoverColor: PropTypes.oneOf([
     "black",
     "primary",

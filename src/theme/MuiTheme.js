@@ -1,10 +1,7 @@
-import {
-  createMuiTheme,
-} from '@material-ui/core/styles';
+import { createMuiTheme } from '@material-ui/core/styles';
 import { ptBR } from '@material-ui/core/locale';
 
-const theme = createMuiTheme(
-  {
+const theme = createMuiTheme({
     typography: {
       fontFamily: ['Open Sans'].join(','),
     },
@@ -30,7 +27,7 @@ const theme = createMuiTheme(
       MuiButton: {
         root: {
           textTransform: 'inherit',
-          borderRadius: 7,
+          borderRadius: 4,
           padding: '10px 20px',
           maxHeight: '50px',
           minHeight: '40px',
@@ -68,6 +65,55 @@ const theme = createMuiTheme(
       MuiTabs: {
         root: {
           backgroundColor: "#F5F5F5",
+        }
+      },
+      MuiTable: {
+        root: {
+          borderCollapse: "unset",
+          borderSpacing: "0 5px",
+        }
+      },
+      MuiTableCell: {
+        root: {
+          border: 'none',
+          fontSize: '1rem',
+          padding: '10px 16px',
+        },
+        head: {
+          fontFamily: "'Josefin Sans', sans-serif",
+          border: 'none',
+        },
+        body: {
+          fontFamily: "'Open Sans', sans-serif",
+          border: 'none',
+        },
+        stickyHeader: {
+          backgroundColor: "#ffffff",
+        }
+      },
+      MuiTableRow: {
+        root: {
+          backgroundColor: "#f7f7f7",
+          marginBottom: "5px",
+          '&:hover': {
+            boxShadow: "6px 6px 8px 0px rgba(52,52,52,0.17)",
+            cursor: "pointer",
+          }
+        },
+        head: {
+          textTransform: "capitalize",
+          backgroundColor: "#ffffff",
+          border: "none",
+          '&:hover': {
+            boxShadow: 'none;'
+          }
+        },
+        footer: {
+          backgroundColor: "#ffffff",
+          border: "none",
+          '&:hover': {
+            boxShadow: 'none;'
+          }
         }
       }
     },

@@ -1,6 +1,5 @@
 import React from "react";
 // @material-ui/core components
-import { makeStyles } from "@material-ui/core/styles";
 import InputAdornment from "@material-ui/core/InputAdornment";
 // @material-ui/icons
 import {Error, Search} from "@material-ui/icons";
@@ -8,17 +7,14 @@ import {Error, Search} from "@material-ui/icons";
 // core components
 import GridContainer from "../../../components/Grid/GridContainer";
 import GridItem from "../../../components/Grid/GridItem";
-import Input from "../../../components/CustomInput/CustomInput";
+import Input from "../../../components/Input/Input";
 
-import styles from "../../../assets/jss/ui-kit/views/componentsSections/basicsStyle";
 import { Section, Container, Title } from './Styles';
-import Dropdown from "../../../components/CustomDropdown/CustomDropdown";
-import DatePicker from "../../../components/CustomDatePicker/CustomDatePicker";
+import Dropdown from "../../../components/Dropdown/Dropdown";
+import DatePicker from "../../../components/DatePicker/DatePickers";
 
-const useStyles = makeStyles(styles);
 
 export default function SectionInputs() {
-  const classes = useStyles();
   return (
     <Section>
       <Container>

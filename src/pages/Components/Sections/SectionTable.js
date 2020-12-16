@@ -1,7 +1,7 @@
 import React from "react";
 
 import { Section, Container, Title } from './Styles';
-import CustomTable from "../../../components/CustomTable/CustomTable";
+import CustomTable from "../../../components/Tables/Tables";
 
 export default function SectionTable() {
   return (

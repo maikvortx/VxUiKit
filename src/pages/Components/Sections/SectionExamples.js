@@ -2,11 +2,11 @@ import React from "react";
 // @material-ui/core components
 import { makeStyles } from "@material-ui/core/styles";
 // @material-ui/icons
-
+import { ArrowRightRounded } from '@material-ui/icons';
 // core components
 import GridContainer from "../../../components/Grid/GridContainer";
 import GridItem from "../../../components/Grid/GridItem";
-import Button from "../../../components/CustomButtons/Button";
+import Button from "../../../components/Buttons/Button";
 
 import One from "../../../assets/img/prototipos/One.png";
 import Boletador from "../../../assets/img/prototipos/boletador.png";
@@ -22,7 +22,7 @@ const useStyles = makeStyles(styles);
 export default function SectionExamples() {
   const classes = useStyles();
   return (
-    <Section>
+    <Section id='prototipos'>
       <Container>
         <Title>
           <h2>Protótipos</h2>
@@ -42,7 +42,7 @@ export default function SectionExamples() {
                 }
               />
               <Button color="primary" size="lg" simple>
-                Ver Vórtx One
+                Ver Vórtx One <ArrowRightRounded/>
               </Button>
             </a>
           </GridItem>
@@ -60,7 +60,7 @@ export default function SectionExamples() {
                 }
               />
               <Button color="primary" size="lg" simple>
-                Vórtx One - Boletador
+                Vórtx One - Boletador <ArrowRightRounded/>
               </Button>
             </a>
           </GridItem>
@@ -78,7 +78,7 @@ export default function SectionExamples() {
                 }
               />
               <Button color="primary" size="lg" simple>
-                VxMeetings
+                VxMeetings <ArrowRightRounded/>
               </Button>
             </a>
           </GridItem>
@@ -96,7 +96,7 @@ export default function SectionExamples() {
                 }
               />
               <Button color="primary" size="lg" simple>
-                VxInforma+
+                VxInforma+ <ArrowRightRounded/>
               </Button>
             </a>
           </GridItem>
@@ -114,7 +114,7 @@ export default function SectionExamples() {
                 }
               />
               <Button color="primary" size="lg" simple>
-                VxCadastro
+                VxCadastro <ArrowRightRounded/>
               </Button>
             </a>
           </GridItem>

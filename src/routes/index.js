@@ -7,6 +7,7 @@ export default function Routes() {
 
   return (
     <Switch>
+      <Route path="/#" exact component={Components} />
       <Route path="/" exact component={Components} />
       <Route
         path="*"

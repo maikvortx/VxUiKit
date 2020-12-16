@@ -1,12 +1,10 @@
 import React from "react";
-// // @material-ui/core components
-import { makeStyles } from "@material-ui/core/styles";
 
 // core components
 import GridContainer from "../../../components/Grid/GridContainer";
 import GridItem from "../../../components/Grid/GridItem";
-import Button from "../../../components/CustomButtons/Button";
-import DatePicker from "../../../components/CustomDatePicker/CustomDatePicker";
+import Button from "../../../components/Buttons/Button";
+import DatePicker from "../../../components/DatePicker/DatePickers";
 
 // icons components
 import {
@@ -75,22 +73,23 @@ import {
 } from '@material-ui/icons';
 
 import { Section, Container, Title, Text } from './Styles';
-import { Card } from "@material-ui/core";
+import Card from "../../../components/Card/Card";
+import CardBody from "../../../components/Card/CardBody";
 
 export default function SectionTypography() {
   return (
     <Section>
       <Container>
-        <div id="typography">
+        <div id="icons">
           <Title><h3>Ícones</h3></Title>
           <GridContainer>
             <GridItem xs={12} sm={5}>
               <Text>
                 A ideia é utilizar da biblioteca inteira do ‘Material Design’, no caso os icones são na versão “rounded”. Podem ser utilizados como representação visual de algo e até como icones/botões de ações. As divisões trazidas aqui são as mais usadas do Material Design (Nem todas foram usadas dentro dos produtos da Vórtx), para ver a lista completa só ir na própria biblioteca:
               </Text>
-              <a href="https://material-ui.com/pt/components/icons/" target="_blank">
+              <a href="https://material-ui.com/pt/components/icons/" target="_blank" rel="noreferrer">
                 <Button color="primary" size="lg" simple>
-                  Ver mais ícones >
+                  Ver mais ícones <ArrowRightRounded/>
                 </Button>
               </a>
               </GridItem>
@@ -213,11 +212,19 @@ export default function SectionTypography() {
               <Text>
               Exemplo em cards (VxInforma). Exemplo:
               </Text>
-              <Card/>
+              <Card width={'50%'}> 
+                <CardBody>
+                  <h5>Vencidas</h5>
+                  <div style={{display: 'flex', justifyContent: "space-between"}}>
+                    <h3>12</h3><WarningRounded style={{fontSize: "60", color: "#cb1e25"}}/>
+                  </div>
+                  
+                </CardBody>
+              </Card>
             </GridItem>
           </GridContainer>
         </div>
       </Container>
     </Section>
   );
-}
+};

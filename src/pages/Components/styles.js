@@ -1,10 +1,5 @@
 import styled from 'styled-components';
 
-const gerarGridWidth = size => {
-  if (!size || isNaN(size)) return 100;
-  return (size / 12) * 100;
-};
-
 export const Container = styled.div`
   border-radius: 4px;
   width: 90%;

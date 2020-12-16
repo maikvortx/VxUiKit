@@ -13,7 +13,6 @@ export default function DefaultLayout({ children }) {
             height: 400,
             color: "white"
           }}
-          // {...rest}
         />
         {children}
       </div>
