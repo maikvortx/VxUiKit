@@ -10,9 +10,9 @@ ENV PORT='80'
 ENV NODE_ENV='production'
 
 ## Install dependencies
-COPY package*.json .
+COPY package*.json ./
 RUN npm install
-COPY / .
+COPY / ./
 RUN npm run build
 RUN npm i -g serve
 
