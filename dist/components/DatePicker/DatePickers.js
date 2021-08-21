@@ -15,7 +15,7 @@ var _reactDatepicker = _interopRequireWildcard(require("react-datepicker"));
 
 require("react-datepicker/dist/react-datepicker.css");
 
-var _formatExtension = require("../../extensions/format-extension");
+var _formatExtension = require("../../helpers/format-extension");
 
 var _moment = _interopRequireDefault(require("moment"));
 

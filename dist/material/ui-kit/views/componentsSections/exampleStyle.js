@@ -5,9 +5,9 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.default = void 0;
 
-var _uiKit = require("../../../../assets/jss/ui-kit");
+var _ = require("../..");
 
-var _customCheckboxRadioSwitch = _interopRequireDefault(require("../../../../assets/jss/ui-kit/customCheckboxRadioSwitch"));
+var _imagesStyles = _interopRequireDefault(require("../../imagesStyles"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -17,14 +17,18 @@ function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { va
 
 function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
 
-var basicsStyle = _objectSpread({
-  container: _uiKit.container,
-  icons: {
-    width: "17px",
-    height: "17px",
-    color: "#FFFFFF"
+var exampleStyle = _objectSpread(_objectSpread({
+  section: {
+    padding: "70px 0"
+  },
+  container: _objectSpread(_objectSpread({}, _.containerFluid), {}, {
+    textAlign: "center !important"
+  })
+}, _imagesStyles.default), {}, {
+  link: {
+    textDecoration: "none"
   }
-}, _customCheckboxRadioSwitch.default);
+});
 
-var _default = basicsStyle;
+var _default = exampleStyle;
 exports.default = _default;

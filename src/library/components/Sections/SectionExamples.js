@@ -14,7 +14,7 @@ import VxMeetings from "../../../assets/img/prototipos/meetings.png";
 import VxInforma from "../../../assets/img/prototipos/informa.png";
 import VxCadastro from "../../../assets/img/prototipos/cadastro.png";
 
-import styles from "../../assets/ui-kit/views/componentsSections/exampleStyle";
+import styles from "../../material/ui-kit/views/componentsSections/exampleStyle";
 import { Section, Container, Title } from './Styles';
 
 const useStyles = makeStyles(styles);

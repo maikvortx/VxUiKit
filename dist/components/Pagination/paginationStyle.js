@@ -5,7 +5,7 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.default = void 0;
 
-var _uiKit = require("../../assets/jss/ui-kit");
+var _uiKit = require("../../material/ui-kit");
 
 var paginationStyle = {
   pagination: {

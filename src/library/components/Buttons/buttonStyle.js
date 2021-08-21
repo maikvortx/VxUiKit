@@ -7,7 +7,7 @@ import {
   successColor,
   warningColor,
   dangerColor
-} from "../../assets/ui-kit";
+} from "../../material/ui-kit";
 
 const buttonStyle = {
   button: {

@@ -5,10 +5,10 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.default = void 0;
 
-var _uiKit = require("../../../assets/jss/ui-kit");
+var _ = require("..");
 
 var componentsStyle = {
-  container: _uiKit.container,
+  container: _.container,
   brand: {
     color: "#FFFFFF",
     textAlign: "left"

@@ -5,7 +5,7 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.default = void 0;
 
-var _uiKit = require("../../assets/jss/ui-kit");
+var _ = require(".");
 
 var customCheckboxRadioSwitch = {
   checkRoot: {
@@ -42,15 +42,15 @@ var customCheckboxRadioSwitch = {
     marginBottom: "0"
   },
   checked: {
-    color: _uiKit.primaryColor + "!important"
+    color: _.primaryColor + "!important"
   },
   checkedIcon: {
     width: "26px",
     height: "26px",
     border: "1px solid rgba(0, 0, 0, .54)",
     boxShadow: "0px 2px 2px rgba(0, 0, 0, 0.1), inset 0px 1px 1px rgba(0, 0, 0, 0.1)",
-    color: _uiKit.whiteColor,
-    backgroundColor: _uiKit.blueColor,
+    color: _.whiteColor,
+    backgroundColor: _.blueColor,
     borderRadius: "2px"
   },
   uncheckedIcon: {
@@ -62,16 +62,16 @@ var customCheckboxRadioSwitch = {
   },
   disabledCheckboxAndRadio: {
     "& $radioChecked": {
-      border: "1px solid " + _uiKit.grayColor,
-      color: _uiKit.grayColor
+      border: "1px solid " + _.grayColor,
+      color: _.grayColor
     },
     "& $checkedIcon": {
-      backgroundColor: _uiKit.grayColor,
+      backgroundColor: _.grayColor,
       opacity: "0.6"
     },
     "& $uncheckedIcon, $radioUnchecked": {
       opacity: "0.6",
-      backgroundColor: _uiKit.grayLightColor
+      backgroundColor: _.grayLightColor
     }
   },
   label: {
@@ -111,15 +111,15 @@ var customCheckboxRadioSwitch = {
     marginRight: "0"
   },
   labelError: {
-    color: _uiKit.dangerColor
+    color: _.dangerColor
   },
   radio: {
-    color: _uiKit.primaryColor + "!important"
+    color: _.primaryColor + "!important"
   },
   radioChecked: {
     width: "26px",
     height: "26px",
-    border: "1px solid " + _uiKit.primaryColor,
+    border: "1px solid " + _.primaryColor,
     borderRadius: "50%"
   },
   radioUnchecked: {
@@ -135,7 +135,7 @@ var customCheckboxRadioSwitch = {
   iconCheckbox: {
     height: "116px",
     width: "116px",
-    color: _uiKit.grayColor,
+    color: _.grayColor,
     "& > span:first-child": {
       borderWidth: "4px",
       borderStyle: "solid",
@@ -148,16 +148,16 @@ var customCheckboxRadioSwitch = {
       transition: "all 0.2s"
     },
     "&:hover": {
-      color: _uiKit.primaryColor,
+      color: _.primaryColor,
       "& > span:first-child": {
-        borderColor: _uiKit.primaryColor
+        borderColor: _.primaryColor
       }
     }
   },
   iconCheckboxChecked: {
-    color: _uiKit.roseColor,
+    color: _.roseColor,
     "& > span:first-child": {
-      borderColor: _uiKit.primaryColor
+      borderColor: _.primaryColor
     }
   },
   iconCheckboxIcon: {
@@ -165,7 +165,7 @@ var customCheckboxRadioSwitch = {
     lineHeight: "111px"
   },
   switchBase: {
-    color: _uiKit.primaryColor + "!important"
+    color: _.primaryColor + "!important"
   },
   switchIcon: {
     boxShadow: "0 1px 3px 1px rgba(0, 0, 0, 0.4)",

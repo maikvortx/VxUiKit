@@ -1,4 +1,4 @@
-import { container, primaryColor } from "../../assets/ui-kit";
+import { container, primaryColor } from "../../material/ui-kit";
 
 const footerStyle = {
   block: {

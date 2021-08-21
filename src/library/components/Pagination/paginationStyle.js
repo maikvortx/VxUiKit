@@ -1,7 +1,7 @@
 import {
   grayColor,
   primaryColor,
-} from "../../assets/ui-kit";
+} from "../../material/ui-kit";
 
 const paginationStyle = {
   pagination: {

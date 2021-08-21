@@ -29,7 +29,7 @@ var _GridItem = _interopRequireDefault(require("../../../library/components/Grid
 
 var _Badge = _interopRequireDefault(require("../../../library/components/Badge/Badge"));
 
-var _basicsStyle = _interopRequireDefault(require("../../assets/jss/ui-kit/views/componentsSections/basicsStyle"));
+var _basicsStyle = _interopRequireDefault(require("../../material/ui-kit/views/componentsSections/basicsStyle"));
 
 var _Styles = require("./Styles");
 

@@ -35,7 +35,7 @@ var _KeyboardArrowDown = _interopRequireDefault(require("@material-ui/icons/Keyb
 
 var _KeyboardArrowUp = _interopRequireDefault(require("@material-ui/icons/KeyboardArrowUp"));
 
-var _formatExtension = require("../../extensions/format-extension");
+var _formatExtension = require("../../helpers/format-extension");
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 

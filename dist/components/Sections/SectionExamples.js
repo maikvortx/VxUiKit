@@ -27,7 +27,7 @@ var _informa = _interopRequireDefault(require("../../../assets/img/prototipos/in
 
 var _cadastro = _interopRequireDefault(require("../../../assets/img/prototipos/cadastro.png"));
 
-var _exampleStyle = _interopRequireDefault(require("../../assets/jss/ui-kit/views/componentsSections/exampleStyle"));
+var _exampleStyle = _interopRequireDefault(require("../../material/ui-kit/views/componentsSections/exampleStyle"));
 
 var _Styles = require("./Styles");
 

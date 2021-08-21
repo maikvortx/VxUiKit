@@ -3,7 +3,7 @@ import {
   dangerColor,
   successColor,
   defaultFont
-} from "../../assets/ui-kit";
+} from "../../material/ui-kit";
 
 const InputStyle = {
   disabled: {

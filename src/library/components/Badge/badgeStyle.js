@@ -5,7 +5,7 @@ import {
   successColor,
   infoColor,
   roseColor
-} from "../../assets/ui-kit";
+} from "../../material/ui-kit";
 
 const badgeStyle = {
   badge: {

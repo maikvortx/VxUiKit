@@ -30,7 +30,7 @@ import SectionCard from "../../library/components/Sections/SectionCard";
 import SectionIlustrations from "../../library/components/Sections/SectionIlustrations";
 import SectionExamples from "../../library/components/Sections/SectionExamples";
 
-import styles from "../../library/assets/ui-kit/views/components";
+import styles from "../../library/material/ui-kit/views/components";
 import { Container, Title } from './styles';
 
 

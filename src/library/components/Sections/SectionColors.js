@@ -4,7 +4,7 @@ import React from "react";
 import GridContainer from "../../../library/components/Grid/GridContainer";
 import GridItem from "../../../library/components/Grid/GridItem";
 
-import { primaryColor } from "../../assets/ui-kit";
+import { primaryColor } from "../../material/ui-kit";
 import { Section, Container, Title, Text } from './Styles';
 import { Box, Tag } from './SectionColorsStyles';
 

@@ -9,7 +9,7 @@ var _react = _interopRequireDefault(require("react"));
 
 var _reactRouterDom = require("react-router-dom");
 
-var _Modal = require("../../library/components/Modal/Modal");
+var _Modal = require("../../components/Modal/Modal");
 
 var _styles = require("@material-ui/core/styles");
 

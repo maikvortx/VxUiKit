@@ -21,7 +21,7 @@ var _exIlustracao = _interopRequireDefault(require("../../../assets/img/ex-ilust
 
 var _stories = _interopRequireDefault(require("../../../assets/img/stories.png"));
 
-var _exampleStyle = _interopRequireDefault(require("../../assets/jss/ui-kit/views/componentsSections/exampleStyle"));
+var _exampleStyle = _interopRequireDefault(require("../../material/ui-kit/views/componentsSections/exampleStyle"));
 
 var _Styles = require("./Styles");
 

@@ -21,11 +21,11 @@ var _Tab = _interopRequireDefault(require("@material-ui/core/Tab"));
 
 var _Icon = _interopRequireDefault(require("@material-ui/core/Icon"));
 
-var _Card = _interopRequireDefault(require("../../library/components/Card/Card"));
+var _Card = _interopRequireDefault(require("../../components/Card/Card"));
 
-var _CardBody = _interopRequireDefault(require("../../library/components/Card/CardBody"));
+var _CardBody = _interopRequireDefault(require("../../components/Card/CardBody"));
 
-var _CardHeader = _interopRequireDefault(require("../../library/components/Card/CardHeader"));
+var _CardHeader = _interopRequireDefault(require("../../components/Card/CardHeader"));
 
 var _customTabsStyle = _interopRequireDefault(require("./customTabsStyle"));
 

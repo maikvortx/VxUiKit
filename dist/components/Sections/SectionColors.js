@@ -11,7 +11,7 @@ var _GridContainer = _interopRequireDefault(require("../../../library/components
 
 var _GridItem = _interopRequireDefault(require("../../../library/components/Grid/GridItem"));
 
-var _uiKit = require("../../assets/jss/ui-kit");
+var _uiKit = require("../../material/ui-kit");
 
 var _Styles = require("./Styles");
 

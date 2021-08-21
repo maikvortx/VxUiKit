@@ -13,7 +13,7 @@ import GridContainer from "../../../library/components/Grid/GridContainer";
 import GridItem from "../../../library/components/Grid/GridItem";
 import Badge from "../../../library/components/Badge/Badge";
 
-import styles from "../../assets/ui-kit/views/componentsSections/basicsStyle";
+import styles from "../../material/ui-kit/views/componentsSections/basicsStyle";
 import { Section, Container, Title } from './Styles';
 
 const useStyles = makeStyles(styles);

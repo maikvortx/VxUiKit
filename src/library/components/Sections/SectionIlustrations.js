@@ -11,7 +11,7 @@ import Button from "../../../library/components/Buttons/Button";
 import ExemploIlustracao from "../../../assets/img/ex-ilustracao.png";
 import Stories from "../../../assets/img/stories.png";
 
-import styles from "../../assets/ui-kit/views/componentsSections/exampleStyle";
+import styles from "../../material/ui-kit/views/componentsSections/exampleStyle";
 import { Section, Container, Title, Text } from './Styles';
 
 const useStyles = makeStyles(styles);
