@@ -1,11 +1,20 @@
 {
-  "name": "ui-kit",
-  "version": "0.1.0",
-  "private": true,
+  "name": "@maikvortx/ui-kit",
+  "version": "0.1.6",
+  "private": false,
+  "main": "dist/index.js",
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/maikvortx/VxUiKit"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  },
   "dependencies": {
-    "@material-ui/core": "^4.11.0",
-    "@material-ui/icons": "^4.9.1",
-    "@material-ui/lab": "^4.0.0-alpha.56",
     "@testing-library/jest-dom": "^5.11.5",
     "@testing-library/react": "^11.1.0",
     "@testing-library/user-event": "^12.1.10",
@@ -15,6 +24,14 @@
     "moment": "^2.29.1",
     "nouislider": "^14.6.2",
     "prop-types": "^15.7.2",
+    "storybook-addon-styled-component-theme": "^2.0.0",
+    "styled-components": "^5.3.0",
+    "web-vitals": "^0.2.4"
+  },
+  "peerDependencies": {
+    "@material-ui/core": "^4.11.0",
+    "@material-ui/icons": "^4.9.1",
+    "@material-ui/lab": "^4.0.0-alpha.56",
     "react": "^17.0.1",
     "react-datepicker": "^3.3.0",
     "react-datetime": "^3.0.4",
@@ -25,10 +42,7 @@
     "react-router-hash-link": "^2.3.1",
     "react-scripts": "4.0.0",
     "react-slick": "^0.27.12",
-    "react-swipeable-views": "^0.13.9",
-    "storybook-addon-styled-component-theme": "^2.0.0",
-    "styled-components": "^5.3.0",
-    "web-vitals": "^0.2.4"
+    "react-swipeable-views": "^0.13.9"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -36,7 +50,9 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "storybook": "start-storybook -p 6006 -s public",
-    "build-storybook": "build-storybook -s public"
+    "build-storybook": "build-storybook -s public",
+    "clean": "rimraf dist",
+    "compile": "npm run clean && cross-env NODE_ENV=production babel src/library --out-dir dist --copy-files --ignore __tests__,spec.js,test.js,stories.js,__snapshots__"
   },
   "eslintConfig": {
     "extends": [
@@ -54,6 +70,16 @@
       }
     ]
   },
+  "babel": {
+    "presets": [
+      "@babel/preset-react",
+      "@babel/preset-env"
+    ],
+    "plugins": [
+      "macros",
+      "@babel/plugin-transform-react-jsx"
+    ]
+  },
   "browserslist": {
     "production": [
       ">0.2%",
@@ -67,11 +93,15 @@
     ]
   },
   "devDependencies": {
+    "@babel/cli": "^7.14.8",
+    "@babel/preset-env": "^7.15.0",
+    "@babel/preset-react": "^7.14.5",
     "@storybook/addon-actions": "^6.3.6",
     "@storybook/addon-essentials": "^6.3.6",
     "@storybook/addon-links": "^6.3.6",
     "@storybook/node-logger": "^6.3.6",
     "@storybook/preset-create-react-app": "^3.2.0",
-    "@storybook/react": "^6.3.6"
+    "@storybook/react": "^6.3.6",
+    "cross-env": "^7.0.3"
   }
 }

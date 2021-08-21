@@ -6,31 +6,31 @@ import { makeStyles } from "@material-ui/core/styles";
 
 // @material-ui/icons
 // core components
-import Header from "../../components/Header/Header";
-import Footer from "../../components/Footer/Footer";
-import GridContainer from "../../components/Grid/GridContainer";
-import GridItem from "../../components/Grid/GridItem";
-import Parallax from "../../components/Parallax/Parallax";
+import Header from "../../library/components/Header/Header";
+import Footer from "../../library/components/Footer/Footer";
+import GridContainer from "../../library/components/Grid/GridContainer";
+import GridItem from "../../library/components/Grid/GridItem";
+import Parallax from "../../library/components/Parallax/Parallax";
 
 // sections for this page
-// import HeaderLinks from "../../components/Header/HeaderLinks";
-import SectionColors from "./Sections/SectionColors";
-import SectionBasics from "./Sections/SectionBasics";
-import SectionButton from "./Sections/SectionButton";
-import SectionInputs from "./Sections/SectionInputs";
-import SectionPagination from "./Sections/SectionPagination";
-import SectionTabs from "./Sections/SectionTabs";
-import SectionAlerts from "./Sections/SectionAlerts";
-import SectionTypography from "./Sections/SectionTypography";
-import SectionIcons from "./Sections/SectionIcons";
-import SectionModal from "./Sections/SectionModal";
-import SectionTooltip from "./Sections/SectionTooltip";
-import SectionTable from "./Sections/SectionTable";
-import SectionCard from "./Sections/SectionCard";
-import SectionIlustrations from "./Sections/SectionIlustrations";
-import SectionExamples from "./Sections/SectionExamples";
+// import HeaderLinks from "../../library/components/Header/HeaderLinks";
+import SectionColors from "../../library/components/Sections/SectionColors";
+import SectionBasics from "../../library/components/Sections/SectionBasics";
+import SectionButton from "../../library/components/Sections/SectionButton";
+import SectionInputs from "../../library/components/Sections/SectionInputs";
+import SectionPagination from "../../library/components/Sections/SectionPagination";
+import SectionTabs from "../../library/components/Sections/SectionTabs";
+import SectionAlerts from "../../library/components/Sections/SectionAlerts";
+import SectionTypography from "../../library/components/Sections/SectionTypography";
+import SectionIcons from "../../library/components/Sections/SectionIcons";
+import SectionModal from "../../library/components/Sections/SectionModal";
+import SectionTooltip from "../../library/components/Sections/SectionTooltip";
+import SectionTable from "../../library/components/Sections/SectionTable";
+import SectionCard from "../../library/components/Sections/SectionCard";
+import SectionIlustrations from "../../library/components/Sections/SectionIlustrations";
+import SectionExamples from "../../library/components/Sections/SectionExamples";
 
-import styles from "../../assets/jss/ui-kit/views/components";
+import styles from "../../library/assets/ui-kit/views/components";
 import { Container, Title } from './styles';
 
 

@@ -1,6 +1,6 @@
 import React from 'react';
-import Header from '../components/Header/Header';
-import { ModalProvider } from '../components/Modal/Modal';
+import Header from '../library/components/Header/Header';
+import { ModalProvider } from '../library/components/Modal/Modal';
 
 export default function DefaultLayout({ children }) {
   return (

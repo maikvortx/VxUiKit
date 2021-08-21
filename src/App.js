@@ -2,8 +2,8 @@ import { Router } from 'react-router-dom';
 import Routes from './routes';
 import history from './extensions/history';
 import { ThemeProvider } from '@material-ui/core/styles';
-import GlobalStyle from './theme/globalStyle';
-import theme from './theme/MuiTheme';
+import GlobalStyle from './library/theme/globalStyle';
+import theme from './library/theme/MuiTheme';
 
 function App() {
   return (
