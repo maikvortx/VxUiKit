@@ -10,6 +10,8 @@
 	- [Executando o projeto](#Executando-o-projeto)
 	- [To Do](#To-Do)
     - [Importando componentes do UiKit](#importando-componentes-do-uikit)
+    - [Como publicar uma nova versão do pacote de componentes?](#publicar-nova-versao)
+
 
 ## Arquitetura
 
@@ -91,4 +93,13 @@ import { Button, Input, DatePicker } from '@maikvortx/ui-kit'
     }}
 />
 
+```
+
+## Como publicar uma nova versão do pacote de componentes?
+
+Para publicar uma nova versão do pacote dos compoentes, altere a campo `version` no package.js aumentando uma versão conforme suas alterações. Importante seguir o padrão de semantic release para a publicação das versões do projeto. Após a alteração da versão execute os comandos abaixo:
+
+```
+npm run compile
+npm publish
 ```
