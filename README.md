@@ -9,6 +9,7 @@
 	- [Arquitetura](#Arquitetura)
 	- [Executando o projeto](#Executando-o-projeto)
 	- [To Do](#To-Do)
+    - [Importando componentes do UiKit](#importando-componentes-do-uikit)
 
 ## Arquitetura
 
@@ -48,3 +49,46 @@ Utiliza o [React](https://reactjs.org/) como framework com [Material-UI](https:/
 - [X] Alertas / Toast notification
 - [X] Ilustração
 - [X] Protótipos
+
+## Importando os componente do UiKit
+
+Para usar o uikit e aproveitar os componentes do nosso design system realize a instalação do pacote abaixo:
+
+```
+npm i @maikvortx/ui-kit
+```
+
+Após a instalação do pacote importe os componetnes que deseja usar em seu projeto:
+
+```
+import { Button, Input, DatePicker } from '@maikvortx/ui-kit'
+
+<!-- Button -->
+<Button color="primary" size="sm">Small</Button>
+
+<!-- Input -->
+<Input
+    id="regular"
+    labelText="Regular"
+    inputProps={{
+        placeholder: "Regular"
+    }}
+    formControlProps={{
+        fullWidth: true
+    }}
+/>
+
+<!-- DatePicker -->
+<DatePicker
+    id="regular"
+    labelText="Regular"
+    variant="outlined"
+    inputProps={{
+        placeholder: "Regular"
+    }}
+    formControlProps={{
+        fullWidth: true
+    }}
+/>
+
+```

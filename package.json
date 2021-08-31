@@ -1,6 +1,6 @@
 {
   "name": "@maikvortx/ui-kit",
-  "version": "0.1.7",
+  "version": "0.1.15",
   "private": false,
   "main": "dist/index.js",
   "files": [
@@ -13,6 +13,16 @@
   },
   "publishConfig": {
     "registry": "https://npm.pkg.github.com"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "storybook": "start-storybook -p 6006 -s public",
+    "build-storybook": "build-storybook -s public",
+    "clean": "rimraf dist",
+    "compile": "npm run clean && cross-env NODE_ENV=production babel src/library --out-dir dist --copy-files --ignore __tests__,spec.js,test.js,stories.js,__snapshots__"
   },
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.5",
@@ -43,16 +53,6 @@
     "react-scripts": "4.0.0",
     "react-slick": "^0.27.12",
     "react-swipeable-views": "^0.13.9"
-  },
-  "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "storybook": "start-storybook -p 6006 -s public",
-    "build-storybook": "build-storybook -s public",
-    "clean": "rimraf dist",
-    "compile": "npm run clean && cross-env NODE_ENV=production babel src/library --out-dir dist --copy-files --ignore __tests__,spec.js,test.js,stories.js,__snapshots__"
   },
   "eslintConfig": {
     "extends": [

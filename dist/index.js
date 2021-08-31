@@ -45,6 +45,60 @@ Object.defineProperty(exports, "Input", {
     return _Input.default;
   }
 });
+Object.defineProperty(exports, "Dropdown", {
+  enumerable: true,
+  get: function get() {
+    return _Dropdown.default;
+  }
+});
+Object.defineProperty(exports, "GridContainer", {
+  enumerable: true,
+  get: function get() {
+    return _GridContainer.default;
+  }
+});
+Object.defineProperty(exports, "GridItem", {
+  enumerable: true,
+  get: function get() {
+    return _GridItem.default;
+  }
+});
+Object.defineProperty(exports, "Pagination", {
+  enumerable: true,
+  get: function get() {
+    return _Pagination.default;
+  }
+});
+Object.defineProperty(exports, "Parallax", {
+  enumerable: true,
+  get: function get() {
+    return _Parallax.default;
+  }
+});
+Object.defineProperty(exports, "Header", {
+  enumerable: true,
+  get: function get() {
+    return _Header.default;
+  }
+});
+Object.defineProperty(exports, "CustomTabs", {
+  enumerable: true,
+  get: function get() {
+    return _CustomTabs.default;
+  }
+});
+Object.defineProperty(exports, "SnackbarContent", {
+  enumerable: true,
+  get: function get() {
+    return _SnackbarContent.default;
+  }
+});
+Object.defineProperty(exports, "Small", {
+  enumerable: true,
+  get: function get() {
+    return _Small.default;
+  }
+});
 Object.defineProperty(exports, "ThemeProvider", {
   enumerable: true,
   get: function get() {
@@ -64,7 +118,25 @@ var _CardHeader = _interopRequireDefault(require("./components/Card/CardHeader")
 
 var _DatePickers = _interopRequireDefault(require("./components/DatePicker/DatePickers"));
 
-var _Input = _interopRequireDefault(require("././components/Input"));
+var _Input = _interopRequireDefault(require("./components/Input/Input"));
+
+var _Dropdown = _interopRequireDefault(require("./components/Dropdown/Dropdown"));
+
+var _GridContainer = _interopRequireDefault(require("./components/Grid/GridContainer"));
+
+var _GridItem = _interopRequireDefault(require("./components/Grid/GridItem"));
+
+var _Pagination = _interopRequireDefault(require("./components/Pagination/Pagination"));
+
+var _Parallax = _interopRequireDefault(require("./components/Parallax/Parallax"));
+
+var _Header = _interopRequireDefault(require("./components/Header/Header"));
+
+var _CustomTabs = _interopRequireDefault(require("./components/CustomTabs/CustomTabs"));
+
+var _SnackbarContent = _interopRequireDefault(require("./components/Snackbar/SnackbarContent"));
+
+var _Small = _interopRequireDefault(require("./components/Typography/Small"));
 
 var _themeProvider = _interopRequireDefault(require("./theme/theme-provider"));
 

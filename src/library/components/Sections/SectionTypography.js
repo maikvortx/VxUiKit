@@ -4,7 +4,7 @@ import React from "react";
 import GridContainer from "../../../library/components/Grid/GridContainer";
 import GridItem from "../../../library/components/Grid/GridItem";
 import Small from "../../../library/components/Typography/Small";
-import GetApp from "@material-ui/icons/GetApp";
+import GetApp from "@material-ui/icons/GetApp"; 
 
 import { Section, Container, Title, Text } from './Styles';
 
